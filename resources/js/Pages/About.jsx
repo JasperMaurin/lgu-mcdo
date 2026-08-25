@@ -58,12 +58,12 @@ export default function About() {
                                     <div className="w-full sm:w-1/2 h-1/2 sm:h-full bg-slate-900 p-6 sm:p-10 flex flex-col justify-center order-2 sm:order-1 relative border-r border-slate-800">
                                         <div className="relative z-10">
                                             <span className="inline-block self-start px-3 py-1 bg-red-900/60 border border-red-500/50 text-red-200 text-xs font-extrabold uppercase tracking-wider rounded-full mb-4">Municipal Vice Mayor</span>
-                                            <h3 className="font-outfit font-extrabold text-2xl sm:text-4xl text-white mb-2">Hon. Vox B. Bago</h3>
+                                            <h3 className="font-outfit font-extrabold text-2xl sm:text-4xl text-white mb-2">Hon. Vox Daroy</h3>
                                             <p className="text-slate-300 text-sm sm:text-base leading-relaxed">Working hand-in-hand to implement visionary policies for cooperative excellence.</p>
                                         </div>
                                     </div>
                                     <div className="w-full sm:w-1/2 h-1/2 sm:h-full relative order-1 sm:order-2 bg-slate-950">
-                                        <img src={voxImg} alt="Municipal Vice Mayor Hon. Vox B. Bago" className="w-full h-full object-cover object-top" onError={(e) => { e.target.src = 'https://ui-avatars.com/api/?name=Vox+Bago&background=dc2626&color=fff&size=512'; }} />
+                                        <img src={voxImg} alt="Municipal Vice Mayor Hon. Vox Daroy" className="w-full h-full object-cover object-top" onError={(e) => { e.target.src = 'https://ui-avatars.com/api/?name=Vox+Bago&background=dc2626&color=fff&size=512'; }} />
                                     </div>
                                 </motion.div>
                             )}
