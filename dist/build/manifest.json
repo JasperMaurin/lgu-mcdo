@@ -1,0 +1,53 @@
+{
+  "resources/Images/Coop.jpg": {
+    "file": "assets/Coop-B640URS8.jpg",
+    "src": "resources/Images/Coop.jpg"
+  },
+  "resources/Images/Darline Yasay.jpg": {
+    "file": "assets/Darline Yasay-Bam1P8rg.jpg",
+    "src": "resources/Images/Darline Yasay.jpg"
+  },
+  "resources/Images/Jasper Maurin.jpg": {
+    "file": "assets/Jasper Maurin-e77FOSxC.jpg",
+    "src": "resources/Images/Jasper Maurin.jpg"
+  },
+  "resources/Images/Jay.jpg": {
+    "file": "assets/Jay-3hVCxatV.jpg",
+    "src": "resources/Images/Jay.jpg"
+  },
+  "resources/Images/Mailyn Quiblat.jpg": {
+    "file": "assets/Mailyn Quiblat-BEfGhdTW.jpg",
+    "src": "resources/Images/Mailyn Quiblat.jpg"
+  },
+  "resources/Images/Vox.jpg": {
+    "file": "assets/Vox-CpwE0YD8.jpg",
+    "src": "resources/Images/Vox.jpg"
+  },
+  "resources/Images/mcdologs.jpg": {
+    "file": "assets/mcdologs-CosqWPEp.jpg",
+    "src": "resources/Images/mcdologs.jpg"
+  },
+  "resources/css/app.css": {
+    "file": "assets/app-C3xvLk3c.css",
+    "src": "resources/css/app.css",
+    "isEntry": true
+  },
+  "resources/js/app.jsx": {
+    "file": "assets/app-Bbf6sxxH.js",
+    "name": "app",
+    "src": "resources/js/app.jsx",
+    "isEntry": true,
+    "css": [
+      "assets/app-C3xvLk3c.css"
+    ],
+    "assets": [
+      "assets/Vox-CpwE0YD8.jpg",
+      "assets/Jay-3hVCxatV.jpg",
+      "assets/Mailyn Quiblat-BEfGhdTW.jpg",
+      "assets/Darline Yasay-Bam1P8rg.jpg",
+      "assets/Jasper Maurin-e77FOSxC.jpg",
+      "assets/mcdologs-CosqWPEp.jpg",
+      "assets/Coop-B640URS8.jpg"
+    ]
+  }
+}

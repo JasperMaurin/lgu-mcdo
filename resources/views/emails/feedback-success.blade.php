@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Received</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f8fafc;
+            color: #334155;
+            -webkit-font-smoothing: antialiased;
+        }
+        .email-wrapper {
+            width: 100%;
+            background-color: #f8fafc;
+            padding: 40px 20px;
+        }
+        .email-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+            border: 1px solid #e2e8f0;
+        }
+        .email-header {
+            background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+            padding: 30px;
+            text-align: center;
+        }
+        .email-header h1 {
+            color: #ffffff;
+            margin: 0;
+            font-size: 24px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+        .email-header p {
+            color: #93c5fd;
+            margin: 8px 0 0;
+            font-size: 14px;
+            font-weight: 500;
+        }
+        .email-logo {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #ffffff;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            margin-bottom: 15px;
+        }
+        .email-body {
+            padding: 40px 30px;
+            line-height: 1.7;
+        }
+        .greeting {
+            font-size: 18px;
+            font-weight: 600;
+            color: #1e293b;
+            margin-top: 0;
+            margin-bottom: 24px;
+        }
+        .content-text {
+            font-size: 15px;
+            color: #475569;
+            margin-bottom: 24px;
+        }
+        .highlight-box {
+            background-color: #f0fdf4;
+            border-left: 4px solid #16a34a;
+            padding: 20px;
+            border-radius: 4px;
+            margin: 30px 0;
+        }
+        .highlight-text {
+            margin: 0;
+            color: #166534;
+            font-size: 15px;
+            font-weight: 500;
+        }
+        .sign-off {
+            margin-top: 40px;
+            font-size: 15px;
+            color: #475569;
+        }
+        .sign-off strong {
+            color: #1e293b;
+            display: block;
+            margin-bottom: 4px;
+        }
+        .email-footer {
+            background-color: #f8fafc;
+            padding: 24px 30px;
+            text-align: center;
+            border-top: 1px solid #f1f5f9;
+        }
+        .email-footer p {
+            margin: 0;
+            font-size: 12px;
+            color: #94a3b8;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <div class="email-wrapper">
+        <div class="email-container">
+            <!-- Header -->
+            <div class="email-header">
+                <img src="{{ $message->embed(resource_path('Images/mcdologs.jpg')) }}" alt="MCDO Logo" class="email-logo">
+                <p>Municipal Cooperative Development Office</p>
+            </div>
+
+            <!-- Body -->
+            <div class="email-body">
+                <p class="greeting">Dear {{ $feedback->name ?: 'Citizen' }},</p>
+                
+                <p class="content-text">
+                    Thank you for taking the time to share your feedback regarding <strong>{{ $feedback->qrCode->name ?? 'our service' }}</strong>. 
+                </p>
+
+                <div class="highlight-box">
+                    <p class="highlight-text">
+                        We have successfully received your submission. Your insights are incredibly valuable and directly assist our team in improving the quality of our services and programs for the community.
+                    </p>
+                </div>
+
+                <p class="content-text">
+                    We carefully review all feedback to ensure that the Municipal Cooperative Development Office continues to uphold the highest standards of service. If your submission requires a follow-up, a dedicated member of our team will reach out to you shortly.
+                </p>
+
+                <div class="sign-off">
+                    <p>Respectfully yours,</p>
+                    <strong>The MCDO Team</strong>
+                    <span>Local Government of Opol, Misamis Oriental</span>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <div class="email-footer">
+                <p>This is an automated message generated by the MCDO Feedback System. Please do not reply directly to this email.</p>
+                <p>&copy; {{ date('Y') }} Municipal Cooperative Development Office. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

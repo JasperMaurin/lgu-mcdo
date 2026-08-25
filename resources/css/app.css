@@ -1,6 +1,264 @@
 @import 'tailwindcss';
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
 @source '../../storage/framework/views/*.php';
 @source '../**/*.blade.php';
 @source '../**/*.js';
+
+@theme {
+  --font-outfit: 'Outfit', ui-sans-serif, system-ui, sans-serif;
+  --animate-fade-in-up: fade-in-up 0.5s ease-out;
+  --animate-slide-in-left: slide-in-left 0.5s ease-out;
+  --animate-bounce-slow: bounce 2s infinite;
+  --animate-shimmer: shimmer 2s infinite;
+}
+
+@keyframes fade-in-up {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slide-in-left {
+  from { opacity: 0; transform: translateX(-20px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 0.6; }
+  50% { opacity: 1; }
+}
+
+@keyframes border-shimmer {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animate-fade-in-up { animation: var(--animate-fade-in-up); }
+.animate-slide-in-left { animation: var(--animate-slide-in-left); }
+.animate-bounce-slow { animation: var(--animate-bounce-slow); }
+.font-outfit { font-family: var(--font-outfit); }
+
+/* ═══════════════════════════════════════════
+   Dashboard design system (unchanged)
+   ═══════════════════════════════════════════ */
+.dashboard-card {
+  @apply bg-white/80 dark:bg-slate-800/70 backdrop-blur-xl p-5 md:p-6 rounded-2xl shadow-lg border border-slate-200/60 dark:border-slate-700/50 transition-all duration-300 ease-in-out;
+}
+.dashboard-card:hover {
+  @apply shadow-xl border-slate-300/60 dark:border-slate-600/50;
+}
+
+/* Custom scrollbar */
+.scrollbar-thin { scrollbar-width: thin; scrollbar-color: rgb(100 116 139 / 0.3) transparent; }
+.scrollbar-thin::-webkit-scrollbar { width: 4px; }
+.scrollbar-thin::-webkit-scrollbar-track { background: transparent; }
+.scrollbar-thin::-webkit-scrollbar-thumb { background-color: rgb(100 116 139 / 0.3); border-radius: 9999px; }
+
+/* Sidebar premium styles */
+.sidebar-nav-item { transform: translateZ(0); will-change: transform, background-color; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Focus visible — Red accent */
+:focus-visible { outline: 2px solid #ef4444; outline-offset: 2px; }
+.dark :focus-visible { outline-color: #f87171; }
+
+/* Smooth theme transition */
+html { transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; }
+html.dark { color-scheme: dark; }
+
+
+/* ═══════════════════════════════════════════
+   PUBLIC PAGES — Solid Blue / White / Red Theme (No Gradients)
+   ═══════════════════════════════════════════ */
+
+/* Base page wrapper - Solid clean light neutral / solid dark navy */
+.public-page {
+  @apply min-h-screen font-sans transition-colors duration-300;
+  background-color: #f8fafc;
+  @apply text-slate-800;
+}
+.dark .public-page {
+  background-color: #090d16;
+  @apply text-slate-100;
+}
+
+/* Ambient background - Pure solid pattern without gradient blobs */
+.public-bg {
+  @apply fixed inset-0 -z-10 overflow-hidden pointer-events-none;
+}
+
+/* Subtle crisp grid pattern using solid single-pixel lines */
+.public-grid-pattern {
+  background-size: 36px 36px;
+  background-image:
+    linear-gradient(to right, rgb(148 163 184 / 0.12) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(148 163 184 / 0.12) 1px, transparent 1px);
+}
+.dark .public-grid-pattern {
+  background-image:
+    linear-gradient(to right, rgb(255 255 255 / 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(255 255 255 / 0.04) 1px, transparent 1px);
+}
+
+/* ─── Card — Clean Solid Surface with High-Contrast Border ─── */
+.public-card {
+  @apply bg-white rounded-2xl shadow-sm border border-slate-200 transition-all duration-300 ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+.dark .public-card {
+  @apply bg-slate-900 border-slate-800;
+}
+.public-card:hover {
+  @apply shadow-md -translate-y-0.5;
+  border-color: #2563eb;
+}
+.dark .public-card:hover {
+  border-color: #3b82f6;
+  box-shadow: 0 10px 25px -5px rgb(0 0 0 / 0.4), 0 0 0 1px #3b82f6;
+}
+
+/* Card with solid colored top accent — use with data-accent="red|blue|amber|indigo|emerald|purple" */
+.public-card-accent {
+  position: relative;
+  overflow: hidden;
+}
+.public-card-accent::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  border-radius: 2px 2px 0 0;
+  z-index: 2;
+}
+.public-card-accent[data-accent="red"]::after { background-color: #dc2626; }
+.public-card-accent[data-accent="blue"]::after { background-color: #2563eb; }
+.public-card-accent[data-accent="amber"]::after { background-color: #d97706; }
+.public-card-accent[data-accent="indigo"]::after { background-color: #4f46e5; }
+.public-card-accent[data-accent="emerald"]::after { background-color: #059669; }
+.public-card-accent[data-accent="purple"]::after { background-color: #7c3aed; }
+
+/* Card with solid colored left accent */
+.public-card-left-accent {
+  border-left: 3px solid transparent;
+}
+.public-card-left-accent[data-accent="red"] { border-left-color: #dc2626; }
+.public-card-left-accent[data-accent="blue"] { border-left-color: #2563eb; }
+.public-card-left-accent[data-accent="amber"] { border-left-color: #d97706; }
+.public-card-left-accent[data-accent="indigo"] { border-left-color: #4f46e5; }
+
+/* ─── Navigation — Solid Modern Top Bar ─── */
+.public-nav {
+  @apply sticky top-0 z-40 w-full px-4 sm:px-8 lg:px-12 py-3.5;
+  @apply bg-white dark:bg-slate-900 backdrop-blur-md;
+  @apply border-b border-slate-200 dark:border-slate-800;
+  border-top: 3px solid #2563eb;
+  box-shadow: 0 1px 4px rgb(0 0 0 / 0.05);
+}
+.dark .public-nav {
+  box-shadow: 0 1px 4px rgb(0 0 0 / 0.3);
+}
+
+.public-nav-link {
+  @apply text-sm font-semibold text-slate-600 dark:text-slate-300 transition-all duration-200;
+  @apply px-3.5 py-1.5 rounded-lg;
+}
+.public-nav-link:hover {
+  @apply text-blue-600 dark:text-blue-400 bg-blue-50/70 dark:bg-blue-950/40;
+}
+.public-nav-link-active {
+  @apply text-blue-700 dark:text-blue-300 font-bold;
+  @apply bg-blue-50 dark:bg-blue-950/70 border border-blue-200 dark:border-blue-800;
+}
+
+/* ─── Eyebrow text ─── */
+.public-eyebrow { letter-spacing: 0.12em; }
+
+/* ─── Solid Title Emphasis (No Gradients) ─── */
+.public-title-gradient {
+  @apply text-slate-900 dark:text-white font-extrabold;
+}
+
+/* ─── Button Solid Hover Micro-Interactions ─── */
+.btn-shimmer {
+  position: relative;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+.btn-shimmer:hover {
+  transform: translateY(-1px);
+}
+
+/* ─── Solid High-Contrast CTA Banner ─── */
+.public-cta {
+  @apply relative overflow-hidden rounded-2xl px-8 py-12 sm:px-12 sm:py-14 text-center;
+  @apply bg-slate-900 dark:bg-[#0c1222];
+  @apply border-2 border-blue-900/60 shadow-xl;
+}
+
+/* ─── Solid Section Divider ─── */
+.public-section-divider {
+  @apply mx-auto my-14 sm:my-18;
+  width: 80px;
+  height: 3px;
+  background-color: #2563eb;
+  border-radius: 2px;
+}
+
+/* ─── Icon ring — solid border ─── */
+.public-icon-ring {
+  @apply relative;
+}
+.public-icon-ring::after {
+  content: '';
+  position: absolute;
+  inset: -3px;
+  border-radius: inherit;
+  border: 1.5px solid rgb(148 163 184 / 0.3);
+  pointer-events: none;
+}
+.dark .public-icon-ring::after {
+  border-color: rgb(148 163 184 / 0.15);
+}
+
+/* ─── Photo frame — crisp solid border ─── */
+.public-photo-frame {
+  @apply relative overflow-hidden bg-slate-100 dark:bg-slate-800;
+  box-shadow: 0 4px 12px rgb(0 0 0 / 0.08);
+}
+.dark .public-photo-frame {
+  box-shadow: 0 4px 14px rgb(0 0 0 / 0.35);
+}
+
+/* ─── Solid Filter Pill ─── */
+.public-filter-pill {
+  @apply absolute inset-0 rounded-full;
+  @apply bg-blue-600 shadow-md shadow-blue-600/20;
+  z-index: -1;
+}
+
+/* Hide default browser password reveal icon */
+input[type="password"]::-ms-reveal,
+input[type="password"]::-ms-clear {
+  display: none;
+}
