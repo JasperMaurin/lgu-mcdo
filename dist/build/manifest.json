@@ -28,17 +28,17 @@
     "src": "resources/Images/mcdologs.jpg"
   },
   "resources/css/app.css": {
-    "file": "assets/app-BcO9PFnV.css",
+    "file": "assets/app-DVeHeeUf.css",
     "src": "resources/css/app.css",
     "isEntry": true
   },
   "resources/js/app.jsx": {
-    "file": "assets/app-CtWiROQs.js",
+    "file": "assets/app-ZEh36ehk.js",
     "name": "app",
     "src": "resources/js/app.jsx",
     "isEntry": true,
     "css": [
-      "assets/app-BcO9PFnV.css"
+      "assets/app-DVeHeeUf.css"
     ],
     "assets": [
       "assets/Vox-CpwE0YD8.jpg",
