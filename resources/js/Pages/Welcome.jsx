@@ -1,3 +1,4 @@
+import bagOngOpol from '../../Images/bag-ong opol.jpg';
 export default function Welcome() {
     return (
         <div className="min-h-screen bg-gradient-to-br from-blue-600 to-indigo-800 flex items-center justify-center px-4">
@@ -5,6 +6,7 @@ export default function Welcome() {
                 <h1 className="text-5xl font-extrabold text-white mb-10 drop-shadow-lg">
                     👋 Welcome to Inertia + React + Tailwind
                 </h1>
+                <img src={bagOngOpol} alt="Bag Ong Opol" className="mx-auto my-4 rounded-lg shadow-lg" style={{maxWidth: "80%"}} />
                 <p className="text-lg text-white/90 mb-8">
                     This is a fully custom setup using <span className="font-semibold text-white">Laravel 12</span>, <span className="font-semibold text-white">Inertia.js</span>, <span className="font-semibold text-white">React 19</span>, and <span className="font-semibold text-white">Tailwind CSS 4</span>.
                 </p>
