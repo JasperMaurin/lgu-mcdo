@@ -23,31 +23,41 @@
     "file": "assets/Vox-CpwE0YD8.jpg",
     "src": "resources/Images/Vox.jpg"
   },
+  "resources/Images/bag-ong opol.jpg": {
+    "file": "assets/bag-ong opol-Dt8FOg-4.jpg",
+    "src": "resources/Images/bag-ong opol.jpg"
+  },
   "resources/Images/mcdologs.jpg": {
     "file": "assets/mcdologs-CosqWPEp.jpg",
     "src": "resources/Images/mcdologs.jpg"
   },
+  "resources/Images/merlyn.jpg": {
+    "file": "assets/merlyn-B57UUvD9.jpg",
+    "src": "resources/Images/merlyn.jpg"
+  },
   "resources/css/app.css": {
-    "file": "assets/app-DVeHeeUf.css",
+    "file": "assets/app-Bxrs7_xd.css",
     "src": "resources/css/app.css",
     "isEntry": true
   },
   "resources/js/app.jsx": {
-    "file": "assets/app-ZEh36ehk.js",
+    "file": "assets/app-D4t6VxB9.js",
     "name": "app",
     "src": "resources/js/app.jsx",
     "isEntry": true,
     "css": [
-      "assets/app-DVeHeeUf.css"
+      "assets/app-Bxrs7_xd.css"
     ],
     "assets": [
       "assets/Vox-CpwE0YD8.jpg",
       "assets/Jay-3hVCxatV.jpg",
       "assets/Mailyn Quiblat-BEfGhdTW.jpg",
       "assets/Darline Yasay-Bam1P8rg.jpg",
+      "assets/merlyn-B57UUvD9.jpg",
       "assets/Jasper Maurin-e77FOSxC.jpg",
       "assets/mcdologs-CosqWPEp.jpg",
-      "assets/Coop-B640URS8.jpg"
+      "assets/Coop-B640URS8.jpg",
+      "assets/bag-ong opol-Dt8FOg-4.jpg"
     ]
   }
 }
