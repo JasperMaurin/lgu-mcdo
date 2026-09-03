@@ -119,4 +119,59 @@ class ContactController extends Controller
 
         return redirect()->back()->with('success', $successMessage);
     }
+
+    /**
+     * Look up the status of an existing inquiry or seminar request by reference number.
+     */
+    public function track(Request $request, string $referenceNo)
+    {
+        // Rate limiting: 30 requests per 10 minutes per IP
+        $ip = $request->ip();
+        $rateLimitKey = 'track_inquiry_ip_' . $ip;
+        if (RateLimiter::tooManyAttempts($rateLimitKey, 30)) {
+            $seconds = RateLimiter::availableIn($rateLimitKey);
+            return response()->json([
+                'found' => false,
+                'message' => "Too many track requests. Please wait {$seconds} seconds before searching again.",
+            ], 429);
+        }
+        RateLimiter::hit($rateLimitKey, 600);
+
+        $cleanRef = strtoupper(trim($referenceNo));
+        $contactRequest = ContactRequest::where('reference_no', $cleanRef)->first();
+
+        if (!$contactRequest) {
+            return response()->json([
+                'found' => false,
+                'message' => "No record found for reference #{$cleanRef}. Please confirm the reference code from your confirmation email and try again.",
+            ], 404);
+        }
+
+        // Mask name for privacy (e.g., Juan Dela Cruz -> Juan D.)
+        $nameParts = explode(' ', trim($contactRequest->name));
+        $maskedName = count($nameParts) > 1 
+            ? $nameParts[0] . ' ' . strtoupper(substr($nameParts[count($nameParts) - 1], 0, 1)) . '.'
+            : $nameParts[0];
+
+        // Mask email for privacy (e.g., user@example.com -> u***@example.com)
+        $emailParts = explode('@', $contactRequest->email);
+        $maskedEmail = substr($emailParts[0], 0, 1) . '***@' . ($emailParts[1] ?? 'domain.com');
+
+        return response()->json([
+            'found' => true,
+            'data' => [
+                'reference_no' => $contactRequest->reference_no,
+                'name' => $maskedName,
+                'email' => $maskedEmail,
+                'subject' => $contactRequest->subject,
+                'is_seminar' => (bool)$contactRequest->is_pre_registration_seminar,
+                'cooperative_name' => $contactRequest->cooperative_name,
+                'attendees_count' => $contactRequest->attendees_count,
+                'preferred_date' => $contactRequest->preferred_date ? $contactRequest->preferred_date->format('F d, Y') : null,
+                'status' => $contactRequest->status ?? 'Pending',
+                'created_at' => $contactRequest->created_at->format('M d, Y h:i A'),
+                'created_relative' => $contactRequest->created_at->diffForHumans(),
+            ]
+        ]);
+    }
 }

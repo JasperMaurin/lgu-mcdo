@@ -20,6 +20,7 @@ Route::get('/services', function () {
 
 Route::get('/contact', [ContactController::class, 'index']);
 Route::post('/contact', [ContactController::class, 'store']);
+Route::get('/contact/track/{referenceNo}', [ContactController::class, 'track']);
 
 Route::get('/cooperatives', function () {
     return Inertia::render('Cooperatives');

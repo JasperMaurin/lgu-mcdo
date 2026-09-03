@@ -693,7 +693,7 @@ export default function About() {
                                             </div>
                                         </div>
                                         <p className="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
-                                            The municipality's 5-pillar strategic roadmap under Mayor Jay B. Bago, integrating social services, economic acceleration, green infrastructure, environmental protection, and open governance.
+                                            The municipality's 5-pillar strategic roadmap under Mayor Jay Francis D. Bago, integrating social services, economic acceleration, green infrastructure, environmental protection, and open governance.
                                         </p>
                                     </div>
 
@@ -1086,7 +1086,7 @@ export default function About() {
                                                 <span className="inline-block self-start px-3 py-1 bg-red-900/60 border border-red-500/50 text-red-200 text-xs font-extrabold uppercase tracking-wider rounded-full mb-3">
                                                     Municipal Mayor
                                                 </span>
-                                                <h3 className="font-outfit font-extrabold text-2xl sm:text-4xl text-white mb-2">Hon. Jay B. Bago</h3>
+                                                <h3 className="font-outfit font-extrabold text-2xl sm:text-4xl text-white mb-2">Hon. Jay Francis D. Bago</h3>
                                                 <p className="text-xs sm:text-sm text-slate-300 leading-relaxed line-clamp-3 sm:line-clamp-none">
                                                     Advocating for participatory local governance and robust cooperative empowerment to build a resilient, forward-looking Opol.
                                                 </p>
@@ -1095,7 +1095,7 @@ export default function About() {
                                         <div className="w-full sm:w-1/2 h-1/2 sm:h-full relative order-1 sm:order-2 bg-slate-950">
                                             <img
                                                 src={jayImg}
-                                                alt="Municipal Mayor Hon. Jay B. Bago"
+                                                alt="Municipal Mayor Hon. Jay Francis D. Bago"
                                                 className="w-full h-full object-cover object-top"
                                                 onError={(e) => {
                                                     e.target.src = 'https://ui-avatars.com/api/?name=Jay+Bago&background=1d4ed8&color=fff&size=512';
