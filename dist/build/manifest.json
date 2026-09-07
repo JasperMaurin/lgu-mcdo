@@ -120,17 +120,17 @@
     "src": "resources/Images/merlyn.jpg"
   },
   "resources/css/app.css": {
-    "file": "assets/app-cdOfF6hA.css",
+    "file": "assets/app-BTZvu6va.css",
     "src": "resources/css/app.css",
     "isEntry": true
   },
   "resources/js/app.jsx": {
-    "file": "assets/app-D2qQmuSr.js",
+    "file": "assets/app-BXj-cFAT.js",
     "name": "app",
     "src": "resources/js/app.jsx",
     "isEntry": true,
     "css": [
-      "assets/app-cdOfF6hA.css"
+      "assets/app-BTZvu6va.css"
     ],
     "assets": [
       "assets/Vox-CpwE0YD8.jpg",

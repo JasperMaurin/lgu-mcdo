@@ -8,6 +8,7 @@ import About from './Pages/About';
 import Services from './Pages/Services';
 import Contact from './Pages/Contact';
 import Cooperatives from './Pages/Cooperatives';
+import Achievements from './Pages/Achievements';
 import Login from './Pages/Login';
 import Dashboard from './Pages/Dashboard';
 import Profile from './Pages/Profile';
@@ -19,6 +20,7 @@ const routes = {
     '/services': Services,
     '/contact': Contact,
     '/cooperatives': Cooperatives,
+    '/achievements': Achievements,
     '/login': Login,
     '/dashboard': Dashboard,
     '/profile': Profile,
