@@ -26,6 +26,10 @@ Route::get('/cooperatives', function () {
     return Inertia::render('Cooperatives');
 });
 
+Route::get('/achievements', function () {
+    return Inertia::render('Achievements');
+});
+
 Route::get('/login', function () {
     return Inertia::render('Login');
 });

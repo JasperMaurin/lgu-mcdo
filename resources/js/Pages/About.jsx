@@ -529,6 +529,13 @@ export default function About() {
                                         >
                                             <span>View Registered Co-ops</span>
                                         </a>
+                                        <a
+                                            href="/achievements"
+                                            className="inline-flex items-center gap-2 px-4 py-2 bg-red-600 hover:bg-red-700 text-white text-xs font-bold uppercase tracking-wider rounded-xl shadow-sm transition-all duration-200"
+                                        >
+                                            <span>Office Achievements</span>
+                                            <ArrowRightIcon className="w-3.5 h-3.5" />
+                                        </a>
                                     </div>
                                 </div>
 

@@ -1,5 +1,6 @@
 import { useEffect, useState, useRef } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
+import { router } from '@inertiajs/react';
 import axios from 'axios';
 import {
     ArrowLeftIcon, BuildingOffice2Icon, CheckCircleIcon, EyeIcon, EyeSlashIcon,
@@ -34,6 +35,16 @@ export default function Login() {
     const [verifiedBanner, setVerifiedBanner] = useState('');
     const [login, setLogin] = useState({ email: '', password: '', remember: false });
     const [register, setRegister] = useState(initialRegistration);
+    const [isNavigatingHome, setIsNavigatingHome] = useState(false);
+
+    const handleBackToHome = (e) => {
+        e.preventDefault();
+        if (isNavigatingHome) return;
+        setIsNavigatingHome(true);
+        setTimeout(() => {
+            router.visit('/');
+        }, 360);
+    };
 
     // Security Token / Trusted Device state
     const [tokenStep, setTokenStep] = useState(false);
@@ -89,7 +100,7 @@ export default function Login() {
         setVerifiedBanner('');
         try {
             const r = await axios.post('/login', { email: login.email, password: login.password, remember_me: login.remember });
-            
+
             // Trusted device direct login (bypass 2FA)
             if (r.data.device_trusted && r.data.success) {
                 localStorage.setItem('auth_token', r.data.token);
@@ -222,7 +233,15 @@ export default function Login() {
                 </section>
 
                 <section className="relative flex items-center justify-center overflow-y-auto p-5 sm:p-8">
-                    <div className="w-full max-w-xl">
+                    <motion.div
+                        animate={
+                            isNavigatingHome
+                                ? { opacity: 0, x: 28, filter: 'blur(4px)' }
+                                : { opacity: 1, x: 0, filter: 'blur(0px)' }
+                        }
+                        transition={{ duration: 0.35, ease: [0.32, 0, 0.67, 0] }}
+                        className="w-full max-w-xl"
+                    >
                         <div className="mb-7 flex items-center gap-3 lg:hidden">
                             <img src={mcdoLogo} className="h-11 w-11 rounded-xl object-contain ring-1 ring-slate-200" alt="MCDO Opol logo" />
                             <div>
@@ -230,9 +249,74 @@ export default function Login() {
                                 <p className="text-xs text-slate-500">Feedback Management System</p>
                             </div>
                         </div>
-                        <a href="/" className="inline-flex items-center gap-1.5 text-sm font-semibold text-slate-500 hover:text-slate-800 mb-4 transition-colors">
-                            <ArrowLeftIcon className="h-4 w-4" /> Back to Home
-                        </a>
+                        {/* Enhanced Top Navigation Bar */}
+                        <div className="mb-5 flex items-center justify-between">
+                            <motion.button
+                                type="button"
+                                onClick={handleBackToHome}
+                                disabled={isNavigatingHome}
+                                whileHover={!isNavigatingHome ? { scale: 1.02, x: -3 } : {}}
+                                whileTap={!isNavigatingHome ? { scale: 0.95 } : {}}
+                                transition={{ type: 'spring', stiffness: 400, damping: 25 }}
+                                className="group relative overflow-hidden inline-flex items-center gap-2.5 rounded-2xl border border-slate-200/90 bg-white/90 px-4 py-2 text-xs font-bold uppercase tracking-wider text-slate-700 shadow-sm backdrop-blur-md transition-colors duration-200 hover:border-blue-500 hover:bg-white hover:text-blue-600 hover:shadow-md cursor-pointer disabled:cursor-wait"
+                            >
+                                {/* Animated background pulse / ripple on click */}
+                                {isNavigatingHome && (
+                                    <motion.span
+                                        initial={{ scale: 0, opacity: 0.35 }}
+                                        animate={{ scale: 3.5, opacity: 0 }}
+                                        transition={{ duration: 0.45 }}
+                                        className="absolute inset-0 bg-blue-500 rounded-full pointer-events-none"
+                                    />
+                                )}
+
+                                {/* Bottom loading progress indicator */}
+                                {isNavigatingHome && (
+                                    <motion.span
+                                        initial={{ scaleX: 0 }}
+                                        animate={{ scaleX: 1 }}
+                                        transition={{ duration: 0.35, ease: 'easeInOut' }}
+                                        className="absolute bottom-0 left-0 right-0 h-0.5 bg-blue-600 rounded-b-2xl origin-left"
+                                    />
+                                )}
+
+                                <span
+                                    className={`flex h-6 w-6 items-center justify-center rounded-xl shadow-xs transition-all duration-200 ${isNavigatingHome
+                                            ? 'bg-blue-600 text-white'
+                                            : 'bg-slate-100 text-slate-500 group-hover:bg-blue-600 group-hover:text-white'
+                                        }`}
+                                >
+                                    {isNavigatingHome ? (
+                                        <motion.span
+                                            animate={{ rotate: 360 }}
+                                            transition={{ repeat: Infinity, duration: 0.7, ease: 'linear' }}
+                                            className="flex items-center justify-center"
+                                        >
+                                            <ArrowPathIcon className="h-3.5 w-3.5" />
+                                        </motion.span>
+                                    ) : (
+                                        <motion.span
+                                            className="flex items-center justify-center"
+                                            animate={{ x: 0 }}
+                                            whileHover={{ x: -2 }}
+                                            transition={{ type: 'spring', stiffness: 300 }}
+                                        >
+                                            <ArrowLeftIcon className="h-3.5 w-3.5" />
+                                        </motion.span>
+                                    )}
+                                </span>
+
+                                <span>{isNavigatingHome ? 'Returning Home...' : 'Back to Home'}</span>
+                            </motion.button>
+
+                            <div className="hidden sm:inline-flex items-center gap-2 rounded-full border border-slate-200/90 bg-white/80 px-3.5 py-1.5 text-[11px] font-bold uppercase tracking-wider text-slate-600 shadow-xs backdrop-blur-md">
+                                <span className="relative flex h-2 w-2">
+                                    <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75" />
+                                    <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-500" />
+                                </span>
+                                <span>Official LGU Portal</span>
+                            </div>
+                        </div>
                         <div className="rounded-3xl border border-white/60 bg-white/80 p-6 shadow-2xl shadow-blue-950/10 backdrop-blur-xl sm:p-8">
                             <div className="flex rounded-xl bg-slate-100 p-1">
                                 <button onClick={() => { setMode('login'); setNotice(''); setTokenStep(false); setVerifiedBanner(''); }} className={`flex-1 rounded-lg py-2.5 text-sm font-bold ${mode === 'login' ? 'bg-white text-blue-700 shadow-sm' : 'text-slate-500'}`}>Sign in</button>
@@ -398,7 +482,7 @@ export default function Login() {
                             )}
                         </div>
                         <p className="mt-5 text-center text-xs text-slate-400">Secure government service portal</p>
-                    </div>
+                    </motion.div>
                 </section>
             </div>
         </main>

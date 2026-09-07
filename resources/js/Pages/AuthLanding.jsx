@@ -28,6 +28,7 @@ import {
 import PublicLayout from '../Components/Public/PublicLayout';
 import SectionHeading from '../Components/Public/SectionHeading';
 import AnimatedSection, { AnimatedGrid, AnimatedItem } from '../Components/Public/AnimatedSection';
+import AchievementsShowcase from '../Components/Public/AchievementsShowcase';
 import CtaBanner from '../Components/Public/CtaBanner';
 import { useReducedMotion } from '../hooks/useReducedMotion';
 
@@ -528,7 +529,32 @@ export default function AuthLanding() {
                 </section>
 
                 {/* ══════════════════════════════════════════════════════════
-                    SECTION 4: TEAM & ORGANIZATIONAL STRUCTURE
+                    SECTION 4: OFFICE ACHIEVEMENTS & FIELD MILESTONES
+                   ══════════════════════════════════════════════════════════ */}
+                <section id="achievements" className="scroll-mt-24 mb-20 sm:mb-28">
+                    <AnimatedSection className="max-w-7xl mx-auto">
+                        <div className="flex flex-col md:flex-row items-center justify-between gap-4 mb-2">
+                            <SectionHeading
+                                eyebrow="Verified On-Ground Operations"
+                                title="Office Milestones & Achievements"
+                                description="Discover our active field operations, civic parades, environmental campaigns, and capacity seminars across Opol's 14 barangays."
+                                className="mb-8! md:mb-12! text-center md:text-left [&>div]:justify-start"
+                            />
+                            <a
+                                href="/achievements"
+                                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-blue-50 dark:bg-blue-950/60 hover:bg-blue-100 dark:hover:bg-blue-900/60 text-blue-700 dark:text-blue-300 font-bold text-xs uppercase tracking-wider border border-blue-200 dark:border-blue-800 transition-all duration-200 shrink-0 self-center md:self-start md:mt-6"
+                            >
+                                <span>Explore Dedicated Gallery</span>
+                                <ArrowRightIcon className="w-4 h-4" />
+                            </a>
+                        </div>
+
+                        <AchievementsShowcase compact={false} showMetrics={false} />
+                    </AnimatedSection>
+                </section>
+
+                {/* ══════════════════════════════════════════════════════════
+                    SECTION 5: TEAM & ORGANIZATIONAL STRUCTURE
                    ══════════════════════════════════════════════════════════ */}
                 <section id="team" className="scroll-mt-24 mb-20 sm:mb-28">
                     <AnimatedSection className="max-w-7xl mx-auto">
