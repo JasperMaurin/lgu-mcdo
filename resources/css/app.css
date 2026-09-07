@@ -105,7 +105,7 @@ html.dark { color-scheme: dark; }
 
 /* Ambient background - Pure solid pattern without gradient blobs */
 .public-bg {
-  @apply fixed inset-0 -z-10 overflow-hidden pointer-events-none;
+  @apply fixed inset-0 z-0 overflow-hidden pointer-events-none;
 }
 
 /* Subtle crisp grid pattern using solid single-pixel lines */

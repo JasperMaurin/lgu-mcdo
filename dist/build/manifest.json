@@ -119,18 +119,22 @@
     "file": "assets/merlyn-B57UUvD9.jpg",
     "src": "resources/Images/merlyn.jpg"
   },
+  "resources/Images/sketch/balay.jpg": {
+    "file": "assets/balay-CtfkWzsp.jpg",
+    "src": "resources/Images/sketch/balay.jpg"
+  },
   "resources/css/app.css": {
-    "file": "assets/app-BTZvu6va.css",
+    "file": "assets/app-59ik1-j8.css",
     "src": "resources/css/app.css",
     "isEntry": true
   },
   "resources/js/app.jsx": {
-    "file": "assets/app-BXj-cFAT.js",
+    "file": "assets/app-CqJy2j0m.js",
     "name": "app",
     "src": "resources/js/app.jsx",
     "isEntry": true,
     "css": [
-      "assets/app-BTZvu6va.css"
+      "assets/app-59ik1-j8.css"
     ],
     "assets": [
       "assets/Vox-CpwE0YD8.jpg",
@@ -142,6 +146,7 @@
       "assets/mcdologs-CosqWPEp.jpg",
       "assets/Coop-B640URS8.jpg",
       "assets/bag-ong opol-Dt8FOg-4.jpg",
+      "assets/balay-CtfkWzsp.jpg",
       "assets/e-Q0w6s2fV.jpg",
       "assets/q-Dazshv_I.jpg",
       "assets/r-BhHCCEf6.jpg",
