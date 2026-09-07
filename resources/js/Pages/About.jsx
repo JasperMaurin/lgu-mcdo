@@ -9,6 +9,18 @@ import jasperImg from '../../Images/Jasper Maurin.jpg';
 import mcdoLogo from '../../Images/mcdologs.jpg';
 import coopImg from '../../Images/Coop.jpg';
 import bagOngOpol from '../../Images/bag-ong opol.jpg';
+import brgyAwang from '../../Images/barangay/Awang.jpg';
+import brgyBagocboc from '../../Images/barangay/Bagocboc.jpg';
+import brgyBarra from '../../Images/barangay/Barra.jpg';
+import brgyCauyonan from '../../Images/barangay/Cauyonan.jpg';
+import brgyMalanang from '../../Images/barangay/Malanang.jpg';
+import brgyPatag from '../../Images/barangay/Patag.jpg';
+import brgyPoblacion from '../../Images/barangay/Poblacion.jpg';
+import brgyTaboc from '../../Images/barangay/Taboc.jpg';
+import brgyBonbon from '../../Images/barangay/bonbon.jpg';
+import brgyIgpit from '../../Images/barangay/igpit.jpg';
+import brgyLuyongBonbon from '../../Images/barangay/luyong bonbon.jpg';
+import brgyTingalan from '../../Images/barangay/tingalan.jpg';
 import {
     BoltIcon,
     EyeIcon,
@@ -120,6 +132,8 @@ const OPOL_BARANGAYS = [
         tag: 'Government Center',
         icon: '🏛️',
         accent: 'red',
+        img: brgyPoblacion,
+        imgGradient: 'from-red-900/80 via-red-800/50 to-transparent',
         iconBg: 'bg-red-50 text-red-600 dark:bg-red-950/50 dark:text-red-400 border-red-200 dark:border-red-900/60',
         desc: 'Administrative seat of the municipal government, primary civic institutions, and central commercial market hub.',
     },
@@ -131,6 +145,8 @@ const OPOL_BARANGAYS = [
         tag: 'Residential & Bay',
         icon: '🌊',
         accent: 'blue',
+        img: brgyBarra,
+        imgGradient: 'from-blue-900/80 via-blue-800/50 to-transparent',
         iconBg: 'bg-blue-50 text-blue-600 dark:bg-blue-950/50 dark:text-blue-400 border-blue-200 dark:border-blue-900/60',
         desc: 'Vibrant gateway bordering CDO with thriving subdivisions, shoreline communities, and local retail enterprises.',
     },
@@ -142,6 +158,8 @@ const OPOL_BARANGAYS = [
         tag: 'Commerce & Industry',
         icon: '🏭',
         accent: 'amber',
+        img: brgyIgpit,
+        imgGradient: 'from-amber-900/80 via-amber-800/50 to-transparent',
         iconBg: 'bg-amber-50 text-amber-600 dark:bg-amber-950/50 dark:text-amber-400 border-amber-200 dark:border-amber-900/60',
         desc: 'Major economic artery along the national highway housing logistics hubs, warehouses, and commercial enterprises.',
     },
@@ -153,6 +171,8 @@ const OPOL_BARANGAYS = [
         tag: 'Eco-Tourism & Coast',
         icon: '🌴',
         accent: 'blue',
+        img: brgyBonbon,
+        imgGradient: 'from-cyan-900/80 via-cyan-800/50 to-transparent',
         iconBg: 'bg-cyan-50 text-cyan-600 dark:bg-cyan-950/50 dark:text-cyan-400 border-cyan-200 dark:border-cyan-900/60',
         desc: 'Renowned beach resorts, coastal hospitality ventures, aquaculture ponds, and family eco-tourism destinations.',
     },
@@ -164,6 +184,8 @@ const OPOL_BARANGAYS = [
         tag: 'Marine & Fisheries',
         icon: '⛵',
         accent: 'blue',
+        img: brgyLuyongBonbon,
+        imgGradient: 'from-blue-900/80 via-blue-800/50 to-transparent',
         iconBg: 'bg-blue-50 text-blue-600 dark:bg-blue-950/50 dark:text-blue-400 border-blue-200 dark:border-blue-900/60',
         desc: 'Dedicated fishing communities with active marine cooperatives, traditional boatbuilders, and seafood landing centers.',
     },
@@ -175,6 +197,8 @@ const OPOL_BARANGAYS = [
         tag: 'Coastal Commerce',
         icon: '⚓',
         accent: 'blue',
+        img: brgyTaboc,
+        imgGradient: 'from-blue-900/80 via-blue-800/50 to-transparent',
         iconBg: 'bg-blue-50 text-blue-600 dark:bg-blue-950/50 dark:text-blue-400 border-blue-200 dark:border-blue-900/60',
         desc: 'Dynamic shoreline community supporting seafood trade, artisanal crafts, and cooperative transport services.',
     },
@@ -186,6 +210,8 @@ const OPOL_BARANGAYS = [
         tag: 'Inland Agribusiness',
         icon: '🌾',
         accent: 'emerald',
+        img: brgyMalanang,
+        imgGradient: 'from-emerald-900/80 via-emerald-800/50 to-transparent',
         iconBg: 'bg-emerald-50 text-emerald-600 dark:bg-emerald-950/50 dark:text-emerald-400 border-emerald-200 dark:border-emerald-900/60',
         desc: 'Expansive agricultural plains producing staple grains, poultry farming, and active farmer co-ops.',
     },
@@ -197,6 +223,8 @@ const OPOL_BARANGAYS = [
         tag: 'Crop Farming',
         icon: '🌱',
         accent: 'emerald',
+        img: brgyPatag,
+        imgGradient: 'from-emerald-900/80 via-emerald-800/50 to-transparent',
         iconBg: 'bg-emerald-50 text-emerald-600 dark:bg-emerald-950/50 dark:text-emerald-400 border-emerald-200 dark:border-emerald-900/60',
         desc: 'High-yield farming valley renowned for commercial vegetable production, nursery gardens, and fertile agro-lands.',
     },
@@ -208,6 +236,8 @@ const OPOL_BARANGAYS = [
         tag: 'Upland Agriculture',
         icon: '🌄',
         accent: 'emerald',
+        img: null,
+        imgGradient: 'from-emerald-900/80 via-emerald-800/50 to-transparent',
         iconBg: 'bg-emerald-50 text-emerald-600 dark:bg-emerald-950/50 dark:text-emerald-400 border-emerald-200 dark:border-emerald-900/60',
         desc: 'Picturesque upland plateau featuring high-value crops, fruit orchards, agro-tourism vistas, and cool climate.',
     },
@@ -219,6 +249,8 @@ const OPOL_BARANGAYS = [
         tag: 'Forestry Reserve',
         icon: '🌲',
         accent: 'emerald',
+        img: brgyAwang,
+        imgGradient: 'from-emerald-900/80 via-emerald-800/50 to-transparent',
         iconBg: 'bg-emerald-50 text-emerald-600 dark:bg-emerald-950/50 dark:text-emerald-400 border-emerald-200 dark:border-emerald-900/60',
         desc: 'Protected forested watersheds, timber reserves, eco-farms, and community-managed agroforestry initiatives.',
     },
@@ -230,6 +262,8 @@ const OPOL_BARANGAYS = [
         tag: 'Livestock & Pasture',
         icon: '🐄',
         accent: 'amber',
+        img: brgyBagocboc,
+        imgGradient: 'from-amber-900/80 via-amber-800/50 to-transparent',
         iconBg: 'bg-amber-50 text-amber-600 dark:bg-amber-950/50 dark:text-amber-400 border-amber-200 dark:border-amber-900/60',
         desc: 'Extensive pastoral hills dedicated to cattle and goat farming, dairy development, and corn cultivation.',
     },
@@ -241,6 +275,8 @@ const OPOL_BARANGAYS = [
         tag: 'Highland Valley',
         icon: '⛰️',
         accent: 'emerald',
+        img: brgyCauyonan,
+        imgGradient: 'from-emerald-900/80 via-emerald-800/50 to-transparent',
         iconBg: 'bg-emerald-50 text-emerald-600 dark:bg-emerald-950/50 dark:text-emerald-400 border-emerald-200 dark:border-emerald-900/60',
         desc: 'Elevated agro-community with coffee and cacao plantations, root crop farming, and producer cooperatives.',
     },
@@ -252,6 +288,8 @@ const OPOL_BARANGAYS = [
         tag: 'Agroforestry Heart',
         icon: '🌿',
         accent: 'emerald',
+        img: null,
+        imgGradient: 'from-emerald-900/80 via-emerald-800/50 to-transparent',
         iconBg: 'bg-emerald-50 text-emerald-600 dark:bg-emerald-950/50 dark:text-emerald-400 border-emerald-200 dark:border-emerald-900/60',
         desc: 'Rich agroforestry heartland nurturing cacao, coconut, coffee, diversified crops, and rural cooperatives.',
     },
@@ -263,6 +301,8 @@ const OPOL_BARANGAYS = [
         tag: 'Riverine Farming',
         icon: '🏞️',
         accent: 'emerald',
+        img: brgyTingalan,
+        imgGradient: 'from-emerald-900/80 via-emerald-800/50 to-transparent',
         iconBg: 'bg-emerald-50 text-emerald-600 dark:bg-emerald-950/50 dark:text-emerald-400 border-emerald-200 dark:border-emerald-900/60',
         desc: 'Scenic riverine settlement alongside pristine upland streams, fruit tree groves, and organic farming initiatives.',
     },
@@ -882,25 +922,43 @@ export default function About() {
                             </div>
 
                             <AnimatedGrid className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
-                                {filteredBarangays.map(({ name, type, icon, tag, iconBg, desc, accent }) => (
+                                {filteredBarangays.map(({ name, type, icon, tag, iconBg, desc, accent, img, imgGradient }) => (
                                     <AnimatedItem key={name}>
-                                        <article className="public-card p-4 sm:p-5 h-full flex flex-col justify-between hover:border-slate-300 dark:hover:border-slate-600 transition-all duration-200 group">
-                                            <div>
-                                                <div className="flex items-center justify-between gap-2 mb-3">
-                                                    <div className={`w-10 h-10 rounded-xl flex items-center justify-center text-xl border ${iconBg} group-hover:scale-110 transition-transform duration-200`}>
-                                                        {icon}
+                                        <article className="public-card h-full flex flex-col overflow-hidden hover:-translate-y-1 hover:shadow-lg transition-all duration-300 group">
+                                            {/* Card Image Banner */}
+                                            <div className="relative h-36 overflow-hidden bg-slate-100 dark:bg-slate-800 shrink-0">
+                                                {img ? (
+                                                    <img
+                                                        src={img}
+                                                        alt={`Barangay ${name}`}
+                                                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                                    />
+                                                ) : (
+                                                    <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-slate-200 to-slate-300 dark:from-slate-700 dark:to-slate-800">
+                                                        <span className="text-5xl opacity-40">{icon}</span>
                                                     </div>
-                                                    <span className="text-[10px] font-extrabold uppercase tracking-wider px-2.5 py-0.5 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 border border-slate-200/80 dark:border-slate-700/60">
-                                                        {tag}
-                                                    </span>
+                                                )}
+                                                {/* Gradient overlay */}
+                                                <div className={`absolute inset-0 bg-gradient-to-t ${imgGradient}`} />
+                                                {/* Tag badge over image */}
+                                                <span className="absolute top-2.5 right-2.5 text-[9px] font-extrabold uppercase tracking-wider px-2 py-0.5 rounded-full bg-white/90 dark:bg-slate-900/90 text-slate-700 dark:text-slate-200 border border-white/60 dark:border-slate-700/60 backdrop-blur-sm shadow-sm">
+                                                    {tag}
+                                                </span>
+                                                {/* Icon badge over image bottom-left */}
+                                                <div className={`absolute bottom-2.5 left-2.5 w-9 h-9 rounded-xl flex items-center justify-center text-lg border-2 border-white/80 shadow-md ${iconBg} backdrop-blur-sm`}>
+                                                    {icon}
                                                 </div>
+                                            </div>
+
+                                            {/* Card Content */}
+                                            <div className="p-4 flex flex-col flex-1">
                                                 <h5 className="font-outfit font-extrabold text-base text-slate-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
                                                     {name}
                                                 </h5>
-                                                <p className="text-xs font-semibold text-slate-500 dark:text-slate-400 mt-0.5">
+                                                <p className="text-[11px] font-semibold text-slate-500 dark:text-slate-400 mt-0.5 mb-2">
                                                     {type}
                                                 </p>
-                                                <p className="text-xs text-slate-600 dark:text-slate-300 leading-relaxed mt-2.5">
+                                                <p className="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
                                                     {desc}
                                                 </p>
                                             </div>
@@ -1124,7 +1182,7 @@ export default function About() {
                                                 <span className="inline-block self-start px-3 py-1 bg-blue-900/60 border border-blue-500/50 text-blue-200 text-xs font-extrabold uppercase tracking-wider rounded-full mb-3">
                                                     Municipal Vice Mayor
                                                 </span>
-                                                <h3 className="font-outfit font-extrabold text-2xl sm:text-4xl text-white mb-2">Hon. Vox Daroy</h3>
+                                                <h3 className="font-outfit font-extrabold text-2xl sm:text-4xl text-white mb-2">Hon. Danilo E. Daroy, Jr.</h3>
                                                 <p className="text-xs sm:text-sm text-slate-300 leading-relaxed line-clamp-3 sm:line-clamp-none">
                                                     Spearheading legislative measures in the Sangguniang Bayan that support cooperative incentives, social enterprise, and livelihood development.
                                                 </p>
@@ -1133,10 +1191,10 @@ export default function About() {
                                         <div className="w-full sm:w-1/2 h-1/2 sm:h-full relative order-1 sm:order-2 bg-slate-950">
                                             <img
                                                 src={voxImg}
-                                                alt="Municipal Vice Mayor Hon. Vox Daroy"
+                                                alt="Municipal Vice Mayor Hon. Danilo E. Daroy, Jr."
                                                 className="w-full h-full object-cover object-top"
                                                 onError={(e) => {
-                                                    e.target.src = 'https://ui-avatars.com/api/?name=Vox+Daroy&background=dc2626&color=fff&size=512';
+                                                    e.target.src = 'https://ui-avatars.com/api/?name=Danilo+Daroy&background=dc2626&color=fff&size=512';
                                                 }}
                                             />
                                         </div>
@@ -1164,7 +1222,7 @@ export default function About() {
                                         }`}
                                 >
                                     <span className={`w-1.5 h-1.5 rounded-full ${!mayorActive ? 'bg-blue-600' : 'bg-slate-400'}`} />
-                                    Vice Mayor Vox Daroy
+                                    Vice Mayor Danilo Daroy, Jr.
                                 </button>
                             </div>
                         </div>

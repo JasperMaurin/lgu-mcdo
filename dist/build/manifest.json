@@ -124,17 +124,17 @@
     "src": "resources/Images/sketch/balay.jpg"
   },
   "resources/css/app.css": {
-    "file": "assets/app-59ik1-j8.css",
+    "file": "assets/app-c9Tm_4Ju.css",
     "src": "resources/css/app.css",
     "isEntry": true
   },
   "resources/js/app.jsx": {
-    "file": "assets/app-CqJy2j0m.js",
+    "file": "assets/app-CQJDMsbi.js",
     "name": "app",
     "src": "resources/js/app.jsx",
     "isEntry": true,
     "css": [
-      "assets/app-59ik1-j8.css"
+      "assets/app-c9Tm_4Ju.css"
     ],
     "assets": [
       "assets/Vox-CpwE0YD8.jpg",

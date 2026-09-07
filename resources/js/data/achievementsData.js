@@ -54,7 +54,7 @@ export const ACHIEVEMENTS_DATA = [
 
         // Official English Executive Narrative
         executiveSummary:
-            'The Municipal Cooperative Development Office (MCDO), marching hand-in-hand with cooperative leaders, board directors, and dedicated members from across Opol’s 14 barangays, proudly participated in the grand Municipal Civic Parade. Carrying the vibrant banner of "One team, one goal, one heart for cooperative development," the contingent demonstrated the unified economic and social strength of the cooperative movement. This milestone celebrated the enduring partnership between the Local Government Unit of Opol, under Mayor Jay Francis Bago and Vice Mayor Vox Daroy, and grassroots self-help organizations committed to inclusive municipal progress.',
+            'The Municipal Cooperative Development Office (MCDO), marching hand-in-hand with cooperative leaders, board directors, and dedicated members from across Opol’s 14 barangays, proudly participated in the grand Municipal Civic Parade. Carrying the vibrant banner of "One team, one goal, one heart for cooperative development," the contingent demonstrated the unified economic and social strength of the cooperative movement. This milestone celebrated the enduring partnership between the Local Government Unit of Opol, under Mayor Jay Francis Bago and Vice Mayor Danilo E. Daroy, Jr., and grassroots self-help organizations committed to inclusive municipal progress.',
 
         // Authentic Local Caption (Cebuano / Bisaya)
         localCaption: {
