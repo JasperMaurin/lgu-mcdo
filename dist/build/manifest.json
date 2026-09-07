@@ -1,4 +1,32 @@
 {
+  "resources/Images/Civic Parade/e.jpg": {
+    "file": "assets/e-Q0w6s2fV.jpg",
+    "src": "resources/Images/Civic Parade/e.jpg"
+  },
+  "resources/Images/Civic Parade/q.jpg": {
+    "file": "assets/q-Dazshv_I.jpg",
+    "src": "resources/Images/Civic Parade/q.jpg"
+  },
+  "resources/Images/Civic Parade/r.jpg": {
+    "file": "assets/r-BhHCCEf6.jpg",
+    "src": "resources/Images/Civic Parade/r.jpg"
+  },
+  "resources/Images/Civic Parade/t.jpg": {
+    "file": "assets/t-DO2xU27M.jpg",
+    "src": "resources/Images/Civic Parade/t.jpg"
+  },
+  "resources/Images/Civic Parade/u.jpg": {
+    "file": "assets/u-D2_pSGhE.jpg",
+    "src": "resources/Images/Civic Parade/u.jpg"
+  },
+  "resources/Images/Civic Parade/w.jpg": {
+    "file": "assets/w-Bj_WbX3T.jpg",
+    "src": "resources/Images/Civic Parade/w.jpg"
+  },
+  "resources/Images/Civic Parade/y.jpg": {
+    "file": "assets/y-YBkV594p.jpg",
+    "src": "resources/Images/Civic Parade/y.jpg"
+  },
   "resources/Images/Coop.jpg": {
     "file": "assets/Coop-B640URS8.jpg",
     "src": "resources/Images/Coop.jpg"
@@ -19,6 +47,34 @@
     "file": "assets/Mailyn Quiblat-BEfGhdTW.jpg",
     "src": "resources/Images/Mailyn Quiblat.jpg"
   },
+  "resources/Images/Monitoring/1.jpg": {
+    "file": "assets/1-qTaViRxX.jpg",
+    "src": "resources/Images/Monitoring/1.jpg"
+  },
+  "resources/Images/Monitoring/2.jpg": {
+    "file": "assets/2-DBhoHtjo.jpg",
+    "src": "resources/Images/Monitoring/2.jpg"
+  },
+  "resources/Images/Monitoring/3.jpg": {
+    "file": "assets/3-JnxEUPlL.jpg",
+    "src": "resources/Images/Monitoring/3.jpg"
+  },
+  "resources/Images/Monitoring/4.jpg": {
+    "file": "assets/4-BHqyx4Mc.jpg",
+    "src": "resources/Images/Monitoring/4.jpg"
+  },
+  "resources/Images/PRS/5.jpg": {
+    "file": "assets/5-DfAgKUdW.jpg",
+    "src": "resources/Images/PRS/5.jpg"
+  },
+  "resources/Images/PRS/6.jpg": {
+    "file": "assets/6-bPkuxwP4.jpg",
+    "src": "resources/Images/PRS/6.jpg"
+  },
+  "resources/Images/PRS/7.jpg": {
+    "file": "assets/7-Dq-Dk207.jpg",
+    "src": "resources/Images/PRS/7.jpg"
+  },
   "resources/Images/Vox.jpg": {
     "file": "assets/Vox-CpwE0YD8.jpg",
     "src": "resources/Images/Vox.jpg"
@@ -26,6 +82,34 @@
   "resources/Images/bag-ong opol.jpg": {
     "file": "assets/bag-ong opol-Dt8FOg-4.jpg",
     "src": "resources/Images/bag-ong opol.jpg"
+  },
+  "resources/Images/clean up drive/10.jpg": {
+    "file": "assets/10-Cw6iV7Ih.jpg",
+    "src": "resources/Images/clean up drive/10.jpg"
+  },
+  "resources/Images/clean up drive/11.jpg": {
+    "file": "assets/11-BbeJ0TXz.jpg",
+    "src": "resources/Images/clean up drive/11.jpg"
+  },
+  "resources/Images/clean up drive/12.jpg": {
+    "file": "assets/12-Dl3MWEUR.jpg",
+    "src": "resources/Images/clean up drive/12.jpg"
+  },
+  "resources/Images/clean up drive/13.jpg": {
+    "file": "assets/13-DgDjqul0.jpg",
+    "src": "resources/Images/clean up drive/13.jpg"
+  },
+  "resources/Images/clean up drive/14.jpg": {
+    "file": "assets/14-wFEb5xx5.jpg",
+    "src": "resources/Images/clean up drive/14.jpg"
+  },
+  "resources/Images/clean up drive/8.jpg": {
+    "file": "assets/8-1tYCsAnp.jpg",
+    "src": "resources/Images/clean up drive/8.jpg"
+  },
+  "resources/Images/clean up drive/9.jpg": {
+    "file": "assets/9-Bv_COLNe.jpg",
+    "src": "resources/Images/clean up drive/9.jpg"
   },
   "resources/Images/mcdologs.jpg": {
     "file": "assets/mcdologs-CosqWPEp.jpg",
@@ -36,17 +120,17 @@
     "src": "resources/Images/merlyn.jpg"
   },
   "resources/css/app.css": {
-    "file": "assets/app-Bxrs7_xd.css",
+    "file": "assets/app-cdOfF6hA.css",
     "src": "resources/css/app.css",
     "isEntry": true
   },
   "resources/js/app.jsx": {
-    "file": "assets/app-D4t6VxB9.js",
+    "file": "assets/app-D2qQmuSr.js",
     "name": "app",
     "src": "resources/js/app.jsx",
     "isEntry": true,
     "css": [
-      "assets/app-Bxrs7_xd.css"
+      "assets/app-cdOfF6hA.css"
     ],
     "assets": [
       "assets/Vox-CpwE0YD8.jpg",
@@ -57,7 +141,28 @@
       "assets/Jasper Maurin-e77FOSxC.jpg",
       "assets/mcdologs-CosqWPEp.jpg",
       "assets/Coop-B640URS8.jpg",
-      "assets/bag-ong opol-Dt8FOg-4.jpg"
+      "assets/bag-ong opol-Dt8FOg-4.jpg",
+      "assets/e-Q0w6s2fV.jpg",
+      "assets/q-Dazshv_I.jpg",
+      "assets/r-BhHCCEf6.jpg",
+      "assets/t-DO2xU27M.jpg",
+      "assets/u-D2_pSGhE.jpg",
+      "assets/w-Bj_WbX3T.jpg",
+      "assets/y-YBkV594p.jpg",
+      "assets/8-1tYCsAnp.jpg",
+      "assets/9-Bv_COLNe.jpg",
+      "assets/10-Cw6iV7Ih.jpg",
+      "assets/11-BbeJ0TXz.jpg",
+      "assets/12-Dl3MWEUR.jpg",
+      "assets/13-DgDjqul0.jpg",
+      "assets/14-wFEb5xx5.jpg",
+      "assets/1-qTaViRxX.jpg",
+      "assets/2-DBhoHtjo.jpg",
+      "assets/3-JnxEUPlL.jpg",
+      "assets/4-BHqyx4Mc.jpg",
+      "assets/5-DfAgKUdW.jpg",
+      "assets/6-bPkuxwP4.jpg",
+      "assets/7-Dq-Dk207.jpg"
     ]
   }
 }
