@@ -234,7 +234,7 @@ const OFFICIAL_OPOL_COOPERATIVES = [
     },
     {
         id: 11,
-        coop_name: 'Opol Employees Multi-Purpose Cooperative (OEMPC)',
+        coop_name: 'Opol Employees Multi-Purpose Cooperative',
         coop_type: 'Credit & Financial',
         sector: 'credit',
         barangay: 'Poblacion',
@@ -419,11 +419,10 @@ export default function Cooperatives() {
                                     onClick={() => setViewMode('cards')}
                                     aria-label="Grid Cards View"
                                     title="Grid Cards View"
-                                    className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold transition-colors ${
-                                        viewMode === 'cards'
+                                    className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold transition-colors ${viewMode === 'cards'
                                             ? 'bg-white dark:bg-slate-800 text-blue-600 dark:text-blue-400 shadow-sm'
                                             : 'text-slate-500 hover:text-slate-700 dark:text-slate-400 dark:hover:text-slate-200'
-                                    }`}
+                                        }`}
                                 >
                                     <Squares2X2Icon className="w-4 h-4" />
                                     <span>Cards Grid</span>
@@ -433,11 +432,10 @@ export default function Cooperatives() {
                                     onClick={() => setViewMode('list')}
                                     aria-label="List Table View"
                                     title="List Table View"
-                                    className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold transition-colors ${
-                                        viewMode === 'list'
+                                    className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold transition-colors ${viewMode === 'list'
                                             ? 'bg-white dark:bg-slate-800 text-red-600 dark:text-red-400 shadow-sm'
                                             : 'text-slate-500 hover:text-slate-700 dark:text-slate-400 dark:hover:text-slate-200'
-                                    }`}
+                                        }`}
                                 >
                                     <ListBulletIcon className="w-4 h-4" />
                                     <span>List View</span>
@@ -458,19 +456,17 @@ export default function Cooperatives() {
                                         key={key}
                                         type="button"
                                         onClick={() => setFilter(key)}
-                                        className={`inline-flex items-center gap-2 px-3 py-1.5 rounded-xl text-xs font-bold transition-all duration-150 border ${
-                                            isActive
+                                        className={`inline-flex items-center gap-2 px-3 py-1.5 rounded-xl text-xs font-bold transition-all duration-150 border ${isActive
                                                 ? 'bg-blue-600 text-white border-blue-600 shadow-sm'
                                                 : 'bg-slate-50 dark:bg-slate-900 text-slate-700 dark:text-slate-300 border-slate-200/80 dark:border-slate-700/70 hover:bg-slate-100 dark:hover:bg-slate-800'
-                                        }`}
+                                            }`}
                                     >
                                         <span>{meta.label}</span>
                                         <span
-                                            className={`text-[10px] px-1.5 py-0.2 rounded-md font-extrabold ${
-                                                isActive
+                                            className={`text-[10px] px-1.5 py-0.2 rounded-md font-extrabold ${isActive
                                                     ? 'bg-white/20 text-white'
                                                     : 'bg-slate-200/80 dark:bg-slate-800 text-slate-600 dark:text-slate-400'
-                                            }`}
+                                                }`}
                                         >
                                             {count}
                                         </span>
