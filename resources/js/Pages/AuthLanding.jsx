@@ -629,7 +629,154 @@ export default function AuthLanding() {
                 </section>
 
                 {/* ══════════════════════════════════════════════════════════
-                    SECTION 5: STRATEGIC VISION & LGU OPOL ALIGNMENT
+                    SECTION 5: CITIZEN'S CHARTER
+                   ══════════════════════════════════════════════════════════ */}
+                <section id="citizens-charter" className="scroll-mt-24 mb-20 sm:mb-28">
+                    <AnimatedSection className="max-w-5xl mx-auto">
+                        <SectionHeading
+                            eyebrow="Transparency & Accountability"
+                            title="Citizen's Charter"
+                            description="Our official mandate as defined by the Local Government of Opol — your guide to the services and responsibilities of the MCDO."
+                        />
+
+                        {/* Premium Charter Card — Red & White Theme */}
+                        <div
+                            className="relative rounded-3xl overflow-hidden shadow-2xl"
+                            style={{
+                                background: '#ffffff',
+                                border: '1px solid rgba(185,28,28,0.2)',
+                                boxShadow: '0 25px 60px rgba(185,28,28,0.15), 0 8px 24px rgba(0,0,0,0.08)',
+                            }}
+                        >
+                            {/* Red corner ornaments */}
+                            <div className="absolute top-5 left-5 w-9 h-9 pointer-events-none" style={{ borderTop: '2.5px solid #dc2626', borderLeft: '2.5px solid #dc2626', borderRadius: '6px 0 0 0' }} />
+                            <div className="absolute top-5 right-5 w-9 h-9 pointer-events-none" style={{ borderTop: '2.5px solid #dc2626', borderRight: '2.5px solid #dc2626', borderRadius: '0 6px 0 0' }} />
+                            <div className="absolute bottom-5 left-5 w-9 h-9 pointer-events-none" style={{ borderBottom: '2.5px solid #dc2626', borderLeft: '2.5px solid #dc2626', borderRadius: '0 0 0 6px' }} />
+                            <div className="absolute bottom-5 right-5 w-9 h-9 pointer-events-none" style={{ borderBottom: '2.5px solid #dc2626', borderRight: '2.5px solid #dc2626', borderRadius: '0 0 6px 0' }} />
+
+                            {/* Subtle red dot texture on white */}
+                            <div className="absolute inset-0 pointer-events-none opacity-[0.03]"
+                                style={{
+                                    backgroundImage: 'radial-gradient(circle, #dc2626 1px, transparent 1px)',
+                                    backgroundSize: '24px 24px',
+                                }}
+                            />
+
+                            {/* TOP CRIMSON HEADER BAR */}
+                            <div
+                                className="relative px-6 sm:px-10 py-5 text-center"
+                                style={{
+                                    background: 'linear-gradient(135deg, #7f1d1d 0%, #b91c1c 40%, #dc2626 60%, #b91c1c 80%, #7f1d1d 100%)',
+                                }}
+                            >
+                                {/* Decorative thin white lines */}
+                                <div style={{ height: '1px', background: 'rgba(255,255,255,0.25)', marginBottom: '8px' }} />
+                                <p className="text-[10px] font-extrabold uppercase tracking-[0.3em] text-white/90">
+                                    Republic of the Philippines
+                                </p>
+                                <p className="text-xs font-semibold text-white/75 mt-1">
+                                    Municipality of Opol, Misamis Oriental
+                                </p>
+                                <div style={{ height: '1px', background: 'rgba(255,255,255,0.25)', marginTop: '8px' }} />
+                            </div>
+
+                            {/* CHARTER BODY — white background */}
+                            <div className="relative px-6 sm:px-14 pt-10 pb-6 bg-white">
+                                {/* Logo + Title Block */}
+                                <div className="flex flex-col items-center mb-8">
+                                    {/* Logo with red ring */}
+                                    <div
+                                        className="mb-6 shadow-xl rounded-full"
+                                        style={{
+                                            padding: '4px',
+                                            background: 'linear-gradient(135deg, #7f1d1d, #dc2626, #ef4444, #dc2626, #7f1d1d)',
+                                            borderRadius: '9999px',
+                                        }}
+                                    >
+                                        <div className="w-24 h-24 sm:w-28 sm:h-28 rounded-full overflow-hidden bg-white" style={{ padding: '3px' }}>
+                                            <img
+                                                src={mcdoLogo}
+                                                alt="MCDO Official Seal"
+                                                className="w-full h-full object-contain rounded-full"
+                                            />
+                                        </div>
+                                    </div>
+
+                                    {/* Double red rule + Title */}
+                                    <div className="w-full text-center">
+                                        <div style={{ height: '2px', background: 'linear-gradient(90deg, transparent, #dc2626, transparent)' }} className="mb-1" />
+                                        <div style={{ height: '1px', background: 'linear-gradient(90deg, transparent, #dc2626 40%, transparent)' }} className="mb-5" />
+                                        <h2
+                                            className="font-outfit text-3xl sm:text-4xl font-extrabold tracking-wide uppercase"
+                                            style={{
+                                                color: '#b91c1c',
+                                                letterSpacing: '0.08em',
+                                                textShadow: '0 2px 8px rgba(185,28,28,0.12)',
+                                            }}
+                                        >
+                                            Citizen's Charter
+                                        </h2>
+                                        <div style={{ height: '1px', background: 'linear-gradient(90deg, transparent, #dc2626 40%, transparent)' }} className="mt-5 mb-1" />
+                                        <div style={{ height: '2px', background: 'linear-gradient(90deg, transparent, #dc2626, transparent)' }} />
+                                    </div>
+                                </div>
+
+                                {/* Mandate Section */}
+                                <div className="max-w-3xl mx-auto">
+                                    {/* Mandate label */}
+                                    <div className="mb-6 flex items-center gap-3">
+                                        <div style={{ width: '4px', height: '28px', background: 'linear-gradient(180deg, #dc2626, #b91c1c)', borderRadius: '4px' }} />
+                                        <h3 className="font-outfit text-base sm:text-lg font-extrabold uppercase tracking-widest text-red-700">
+                                            Mandate:
+                                        </h3>
+                                    </div>
+
+                                    {/* 7 Mandate Items */}
+                                    <ol className="space-y-4">
+                                        {[
+                                            'Formulate measures for consideration of the Sanggunian and provide technical assistance and support to the Mayor, as the case may be, in carrying out measures to ensure the delivery of basic services and provision of facilities through the development of cooperatives, and in providing access to such services and facilities.',
+                                            'Develop plans and strategies for cooperative programs and projects and implement them upon approval thereof by the Mayor, as the case may be.',
+                                            'Assist in the promotion, organization, supervision, and development of cooperatives.',
+                                            'Assist cooperatives in establishing linkages with NGAs and NGOs involved in the promotion and integration of the concept of cooperatives in the livelihood project of the people and other community services.',
+                                            'Front liner in cooperatives organization, rehabilitation or viability enhancement particularly during and aftermath of man-made and natural calamities, to aid in their survival and if necessary, subsequent rehabilitation.',
+                                            'Recommend to the Sanggunian, and advise the Mayor, as the case may be, on all other matters relative to cooperative development and viability enhancement which will provide the livelihood and quality of life of the people.',
+                                            'Exercise such other powers and perform such other duties and functions as may be prescribed by law or ordinance.',
+                                        ].map((item, i) => (
+                                            <li key={i} className="flex items-start gap-4">
+                                                {/* Numbered badge — red circle */}
+                                                <span
+                                                    className="shrink-0 w-7 h-7 rounded-full flex items-center justify-center text-[11px] font-extrabold text-white mt-0.5 shadow-sm"
+                                                    style={{ background: 'linear-gradient(135deg, #b91c1c, #ef4444)' }}
+                                                >
+                                                    {i + 1}
+                                                </span>
+                                                <p className="text-sm sm:text-[14.5px] leading-relaxed text-slate-700">
+                                                    {item}
+                                                </p>
+                                            </li>
+                                        ))}
+                                    </ol>
+                                </div>
+                            </div>
+
+                            {/* CRIMSON FOOTER STRIP */}
+                            <div
+                                className="relative px-6 sm:px-14 py-3.5 flex items-center justify-between"
+                                style={{
+                                    background: 'linear-gradient(135deg, #7f1d1d 0%, #b91c1c 40%, #dc2626 60%, #b91c1c 80%, #7f1d1d 100%)',
+                                }}
+                            >
+                                <p className="text-[11px] italic font-semibold text-white/90">
+                                    Committed to Serve with Excellence
+                                </p>
+                                <p className="text-[11px] font-bold text-white/80">2025</p>
+                            </div>
+                        </div>
+                    </AnimatedSection>
+                </section>
+
+                {/* ══════════════════════════════════════════════════════════
+                    SECTION 6: STRATEGIC VISION & LGU OPOL ALIGNMENT
                    ══════════════════════════════════════════════════════════ */}
                 <AnimatedSection className="max-w-6xl mx-auto mb-20 sm:mb-28">
                     <div className="public-card public-card-accent overflow-hidden" data-accent="red">
