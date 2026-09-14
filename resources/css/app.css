@@ -268,6 +268,10 @@ html.dark {
   background-color: #7c3aed;
 }
 
+.public-card-accent[data-accent="sky"]::after {
+  background-color: #0284c7;
+}
+
 /* Card with solid colored left accent */
 .public-card-left-accent {
   border-left: 3px solid transparent;

@@ -21,6 +21,27 @@ import brgyBonbon from '../../Images/barangay/bonbon.jpg';
 import brgyIgpit from '../../Images/barangay/igpit.jpg';
 import brgyLuyongBonbon from '../../Images/barangay/luyong bonbon.jpg';
 import brgyTingalan from '../../Images/barangay/tingalan.jpg';
+
+// Official 5 Pillars of Bag-ong Opol Logos & Emblems
+import buildGreenLogo from '../../Images/5 pilars/BuildGreen_Logo.png';
+import buildGreenLogoDark from '../../Images/5 pilars/BuildGreen_Logo_Dark.png';
+import buildGreenEmblem from '../../Images/5 pilars/BuildGreen_Emblem.png';
+
+import careForAllLogo from '../../Images/5 pilars/CareForAll_Logo.png';
+import careForAllLogoDark from '../../Images/5 pilars/CareForAll_Logo_Dark.png';
+import careForAllEmblem from '../../Images/5 pilars/CareForAll_Emblem.png';
+
+import growSmartLogo from '../../Images/5 pilars/GrowSmart_Logo.png';
+import growSmartLogoDark from '../../Images/5 pilars/GrowSmart_Logo_Dark.png';
+import growSmartEmblem from '../../Images/5 pilars/GrowSmart_Emblem.png';
+
+import leadOpenlyLogo from '../../Images/5 pilars/LeadOpenly_Logo.png';
+import leadOpenlyLogoDark from '../../Images/5 pilars/LeadOpenly_Logo_Dark.png';
+import leadOpenlyEmblem from '../../Images/5 pilars/LeadOpenly_Emblem.png';
+
+import protectNatureLogo from '../../Images/5 pilars/ProtectNature_Logo.png';
+import protectNatureLogoDark from '../../Images/5 pilars/ProtectNature_Logo_Dark.png';
+import protectNatureEmblem from '../../Images/5 pilars/ProtectNature_Emblem.png';
 import {
     BoltIcon,
     EyeIcon,
@@ -312,11 +333,16 @@ const BAG_ONG_OPOL_PILLARS = [
     {
         number: '01',
         name: 'Social',
+        sector: 'Social Services & Welfare',
         tagline: 'Care for All',
-        accent: 'blue',
-        badge: 'text-blue-700 bg-blue-50 dark:text-blue-300 dark:bg-blue-950/70 border-blue-200 dark:border-blue-800',
-        colorBar: 'bg-blue-600',
-        icon: UsersIcon,
+        accent: 'red',
+        badge: 'text-red-700 bg-red-50/90 dark:text-red-300 dark:bg-red-950/70 border-red-200 dark:border-red-900/60',
+        glow: 'from-red-500/15 via-red-500/5 to-transparent',
+        iconBox: 'bg-gradient-to-br from-red-50 to-red-100/70 dark:from-red-950/50 dark:to-red-900/30 border-red-200/80 dark:border-red-800/40 shadow-sm shadow-red-500/10',
+        logoDark: careForAllLogoDark,
+        logoWhite: careForAllLogo,
+        emblem: careForAllEmblem,
+        checkColor: 'text-red-600 dark:text-red-400',
         highlights: [
             'KABAYA Social Services App',
             'Modernized Command Center',
@@ -327,11 +353,16 @@ const BAG_ONG_OPOL_PILLARS = [
     {
         number: '02',
         name: 'Economic',
+        sector: 'Agri-Supply & Enterprise',
         tagline: 'Grow Smart',
         accent: 'amber',
-        badge: 'text-amber-700 bg-amber-50 dark:text-amber-300 dark:bg-amber-950/70 border-amber-200 dark:border-amber-800',
-        colorBar: 'bg-amber-600',
-        icon: ArrowTrendingUpIcon,
+        badge: 'text-amber-700 bg-amber-50/90 dark:text-amber-300 dark:bg-amber-950/70 border-amber-200 dark:border-amber-900/60',
+        glow: 'from-amber-500/15 via-amber-500/5 to-transparent',
+        iconBox: 'bg-gradient-to-br from-amber-50 to-amber-100/70 dark:from-amber-950/50 dark:to-amber-900/30 border-amber-200/80 dark:border-amber-800/40 shadow-sm shadow-amber-500/10',
+        logoDark: growSmartLogoDark,
+        logoWhite: growSmartLogo,
+        emblem: growSmartEmblem,
+        checkColor: 'text-amber-600 dark:text-amber-400',
         highlights: [
             'AGROW Opol Supply Chain',
             'INVEST Opol & Tourism Readiness',
@@ -342,11 +373,16 @@ const BAG_ONG_OPOL_PILLARS = [
     {
         number: '03',
         name: 'Infrastructure',
+        sector: 'Eco-Public Works & Roads',
         tagline: 'Build Green',
         accent: 'emerald',
-        badge: 'text-emerald-700 bg-emerald-50 dark:text-emerald-300 dark:bg-emerald-950/70 border-emerald-200 dark:border-emerald-800',
-        colorBar: 'bg-emerald-600',
-        icon: BuildingOffice2Icon,
+        badge: 'text-emerald-700 bg-emerald-50/90 dark:text-emerald-300 dark:bg-emerald-950/70 border-emerald-200 dark:border-emerald-900/60',
+        glow: 'from-emerald-500/15 via-emerald-500/5 to-transparent',
+        iconBox: 'bg-gradient-to-br from-emerald-50 to-emerald-100/70 dark:from-emerald-950/50 dark:to-emerald-900/30 border-emerald-200/80 dark:border-emerald-800/40 shadow-sm shadow-emerald-500/10',
+        logoDark: buildGreenLogoDark,
+        logoWhite: buildGreenLogo,
+        emblem: buildGreenEmblem,
+        checkColor: 'text-emerald-600 dark:text-emerald-400',
         highlights: [
             'Climate-Responsive Public Works',
             'Smart Eco-Building Upgrades',
@@ -357,11 +393,16 @@ const BAG_ONG_OPOL_PILLARS = [
     {
         number: '04',
         name: 'Environment',
+        sector: 'Watershed & Waste Mgmt',
         tagline: 'Protect Nature',
-        accent: 'teal',
-        badge: 'text-teal-700 bg-teal-50 dark:text-teal-300 dark:bg-teal-950/70 border-teal-200 dark:border-teal-800',
-        colorBar: 'bg-teal-600',
-        icon: GlobeAltIcon,
+        accent: 'sky',
+        badge: 'text-sky-700 bg-sky-50/90 dark:text-sky-300 dark:bg-sky-950/70 border-sky-200 dark:border-sky-900/60',
+        glow: 'from-sky-500/15 via-sky-500/5 to-transparent',
+        iconBox: 'bg-gradient-to-br from-sky-50 to-sky-100/70 dark:from-sky-950/50 dark:to-sky-900/30 border-sky-200/80 dark:border-sky-800/40 shadow-sm shadow-sky-500/10',
+        logoDark: protectNatureLogoDark,
+        logoWhite: protectNatureLogo,
+        emblem: protectNatureEmblem,
+        checkColor: 'text-sky-600 dark:text-sky-400',
         highlights: [
             'Municipal Solid Waste Program',
             'Comprehensive Land Use Plan',
@@ -372,11 +413,16 @@ const BAG_ONG_OPOL_PILLARS = [
     {
         number: '05',
         name: 'Institutional',
+        sector: 'Open & Transparent Gov',
         tagline: 'Lead Openly',
         accent: 'purple',
-        badge: 'text-purple-700 bg-purple-50 dark:text-purple-300 dark:bg-purple-950/70 border-purple-200 dark:border-purple-800',
-        colorBar: 'bg-purple-600',
-        icon: ShieldCheckIcon,
+        badge: 'text-purple-700 bg-purple-50/90 dark:text-purple-300 dark:bg-purple-950/70 border-purple-200 dark:border-purple-900/60',
+        glow: 'from-purple-500/15 via-purple-500/5 to-transparent',
+        iconBox: 'bg-gradient-to-br from-purple-50 to-purple-100/70 dark:from-purple-950/50 dark:to-purple-900/30 border-purple-200/80 dark:border-purple-800/40 shadow-sm shadow-purple-500/10',
+        logoDark: leadOpenlyLogoDark,
+        logoWhite: leadOpenlyLogo,
+        emblem: leadOpenlyEmblem,
+        checkColor: 'text-purple-600 dark:text-purple-400',
         highlights: [
             'Participatory Planning & Budgeting',
             'Open Data & Performance Framework',
@@ -809,26 +855,61 @@ export default function About() {
                             </div>
 
                             <AnimatedGrid className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
-                                {BAG_ONG_OPOL_PILLARS.map(({ number, name, tagline, accent, badge, colorBar, icon: Icon, highlights }) => (
+                                {BAG_ONG_OPOL_PILLARS.map(({ number, name, sector, tagline, accent, badge, glow, iconBox, logoDark, logoWhite, emblem, checkColor, highlights }) => (
                                     <AnimatedItem key={name}>
-                                        <article className="public-card public-card-accent p-5 h-full flex flex-col justify-between" data-accent={accent}>
+                                        <article className="public-card public-card-accent p-5 h-full flex flex-col justify-between group hover:shadow-xl transition-all duration-300" data-accent={accent}>
                                             <div>
+                                                {/* Top Row: Pillar Number + Official Tagline Badge */}
                                                 <div className="flex items-center justify-between gap-2 mb-3">
-                                                    <span className="font-outfit font-black text-xl text-slate-300 dark:text-slate-600">{number}</span>
-                                                    <span className={`text-[10px] font-extrabold uppercase tracking-wider px-2 py-0.5 rounded-full border ${badge}`}>
+                                                    <span className="font-outfit font-black text-2xl text-slate-300 dark:text-slate-600 group-hover:text-slate-400 dark:group-hover:text-slate-500 transition-colors">
+                                                        {number}
+                                                    </span>
+                                                    <span className={`text-[10px] font-extrabold uppercase tracking-wider px-2.5 py-0.5 rounded-full border ${badge}`}>
                                                         {tagline}
                                                     </span>
                                                 </div>
-                                                <div className="flex items-center gap-2 mb-2">
-                                                    <div className={`w-8 h-8 rounded-lg flex items-center justify-center ${badge}`}>
-                                                        <Icon className="w-4 h-4" />
-                                                    </div>
-                                                    <h5 className="font-outfit font-extrabold text-base text-slate-900 dark:text-white">{name}</h5>
+
+                                                {/* Official Logo Banner Showcase (Crystal Clear in Light & Dark Mode) */}
+                                                <div className="mb-4 p-3 rounded-2xl bg-gradient-to-b from-slate-50/90 to-slate-100/60 dark:from-slate-800/80 dark:to-slate-900/80 border border-slate-200/80 dark:border-slate-700/60 shadow-inner flex items-center justify-center min-h-[72px] relative overflow-hidden group-hover:border-slate-300 dark:group-hover:border-slate-600 transition-all">
+                                                    {/* Ambient Glow */}
+                                                    <div className={`absolute inset-0 bg-gradient-to-br ${glow} opacity-60 dark:opacity-40 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none`} />
+
+                                                    {/* Light Mode Logo */}
+                                                    <img
+                                                        src={logoDark}
+                                                        alt={`${tagline} Official Logo`}
+                                                        className="relative z-10 h-10 w-auto max-w-[90%] object-contain dark:hidden drop-shadow-sm transition-transform duration-300 group-hover:scale-105"
+                                                        loading="lazy"
+                                                    />
+                                                    {/* Dark Mode Logo */}
+                                                    <img
+                                                        src={logoWhite}
+                                                        alt={`${tagline} Official Logo`}
+                                                        className="relative z-10 h-10 w-auto max-w-[90%] object-contain hidden dark:block drop-shadow-sm transition-transform duration-300 group-hover:scale-105"
+                                                        loading="lazy"
+                                                    />
                                                 </div>
+
+                                                {/* Pillar Title & Official Emblem */}
+                                                <div className="flex items-center gap-2.5 mb-2">
+                                                    <div className={`w-8 h-8 rounded-lg flex items-center justify-center p-1 shrink-0 border ${iconBox} transition-transform duration-300 group-hover:scale-110`}>
+                                                        <img src={emblem} alt="" className="w-full h-full object-contain" />
+                                                    </div>
+                                                    <div className="min-w-0">
+                                                        <h5 className="font-outfit font-extrabold text-base text-slate-900 dark:text-white leading-tight truncate">
+                                                            {name}
+                                                        </h5>
+                                                        <p className="text-[10px] font-semibold text-slate-500 dark:text-slate-400 truncate">
+                                                            {sector}
+                                                        </p>
+                                                    </div>
+                                                </div>
+
+                                                {/* Highlights Bullet List */}
                                                 <ul className="space-y-1.5 mt-3 pt-3 border-t border-slate-100 dark:border-slate-800">
                                                     {highlights.map((item) => (
                                                         <li key={item} className="text-[11px] text-slate-600 dark:text-slate-300 flex items-start gap-1.5 leading-snug">
-                                                            <CheckIcon className="w-3.5 h-3.5 text-blue-600 dark:text-blue-400 shrink-0 mt-0.5" />
+                                                            <CheckIcon className={`w-3.5 h-3.5 ${checkColor} shrink-0 mt-0.5`} />
                                                             <span>{item}</span>
                                                         </li>
                                                     ))}
@@ -1012,6 +1093,31 @@ export default function About() {
                                         <p className="text-xs text-slate-600 dark:text-slate-300 italic">
                                             "A Vibrant, Inclusive, Smart, Eco-Town Where Sustainability Meets Innovation — Technology that cares, governance that empowers."
                                         </p>
+                                    </div>
+
+                                    {/* 5 Pillars Official Brand Showcase */}
+                                    <div className="mt-6 w-full max-w-2xl">
+                                        <h4 className="font-outfit font-bold text-xs uppercase tracking-wider text-slate-400 dark:text-slate-500 mb-3 text-center">
+                                            Official Pillar Brand Identifiers
+                                        </h4>
+                                        <div className="grid grid-cols-2 sm:grid-cols-5 gap-2.5">
+                                            {BAG_ONG_OPOL_PILLARS.map(({ name, tagline, emblem, iconBox }) => (
+                                                <div
+                                                    key={name}
+                                                    className="p-2.5 rounded-xl bg-slate-50 dark:bg-slate-800/80 border border-slate-200/80 dark:border-slate-700/60 flex flex-col items-center text-center group hover:border-slate-300 dark:hover:border-slate-600 transition-colors"
+                                                >
+                                                    <div className={`w-8 h-8 rounded-lg flex items-center justify-center p-1 mb-1.5 border ${iconBox} transition-transform group-hover:scale-110`}>
+                                                        <img src={emblem} alt={tagline} className="w-full h-full object-contain" />
+                                                    </div>
+                                                    <span className="font-outfit font-extrabold text-xs text-slate-800 dark:text-white leading-tight">
+                                                        {name}
+                                                    </span>
+                                                    <span className="text-[9px] font-bold text-slate-500 dark:text-slate-400 mt-0.5">
+                                                        {tagline}
+                                                    </span>
+                                                </div>
+                                            ))}
+                                        </div>
                                     </div>
                                 </div>
                                 <div className="px-6 py-3 border-t border-slate-200 dark:border-slate-800 flex justify-end bg-slate-50/50 dark:bg-slate-900/50">
