@@ -740,7 +740,7 @@ export default function About() {
                                             </div>
                                         </div>
                                         <p className="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
-                                            The municipality's 5-pillar strategic roadmap under Mayor Jay Francis D. Bago, integrating social services, economic acceleration, green infrastructure, environmental protection, and open governance.
+                                            The municipality's 5-pillar strategic roadmap under Mayor Atty. Jay Francis D. Bago, integrating social services, economic acceleration, green infrastructure, environmental protection, and open governance.
                                         </p>
                                     </div>
 
@@ -888,33 +888,30 @@ export default function About() {
                                     <button
                                         type="button"
                                         onClick={() => setSelectedBarangayZone('all')}
-                                        className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all duration-200 ${
-                                            selectedBarangayZone === 'all'
-                                                ? 'bg-white dark:bg-slate-900 text-blue-700 dark:text-blue-300 shadow-sm'
-                                                : 'text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white'
-                                        }`}
+                                        className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all duration-200 ${selectedBarangayZone === 'all'
+                                            ? 'bg-white dark:bg-slate-900 text-blue-700 dark:text-blue-300 shadow-sm'
+                                            : 'text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white'
+                                            }`}
                                     >
                                         All (14)
                                     </button>
                                     <button
                                         type="button"
                                         onClick={() => setSelectedBarangayZone('coastal')}
-                                        className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all duration-200 ${
-                                            selectedBarangayZone === 'coastal'
-                                                ? 'bg-white dark:bg-slate-900 text-blue-700 dark:text-blue-300 shadow-sm'
-                                                : 'text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white'
-                                        }`}
+                                        className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all duration-200 ${selectedBarangayZone === 'coastal'
+                                            ? 'bg-white dark:bg-slate-900 text-blue-700 dark:text-blue-300 shadow-sm'
+                                            : 'text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white'
+                                            }`}
                                     >
                                         Coastal & Urban (6)
                                     </button>
                                     <button
                                         type="button"
                                         onClick={() => setSelectedBarangayZone('upland')}
-                                        className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all duration-200 ${
-                                            selectedBarangayZone === 'upland'
-                                                ? 'bg-white dark:bg-slate-900 text-emerald-700 dark:text-emerald-300 shadow-sm'
-                                                : 'text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white'
-                                        }`}
+                                        className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all duration-200 ${selectedBarangayZone === 'upland'
+                                            ? 'bg-white dark:bg-slate-900 text-emerald-700 dark:text-emerald-300 shadow-sm'
+                                            : 'text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white'
+                                            }`}
                                     >
                                         Upland & Agro (8)
                                     </button>
@@ -1127,107 +1124,215 @@ export default function About() {
                     SECTION 4: EXECUTIVE LEADERSHIP
                    ══════════════════════════════════════════════════════════ */}
                 <section id="leadership" className="scroll-mt-24 mb-20 sm:mb-28">
-                    <AnimatedSection className="max-w-5xl mx-auto">
+                    <AnimatedSection className="max-w-6xl mx-auto">
                         <SectionHeading
                             eyebrow="Executive Direction"
                             title="Municipal Leadership"
                             description="Championing good governance, community empowerment, and cooperative growth for the Municipality of Opol."
                         />
 
-                        {/* Leadership Slider */}
-                        <div className="relative w-full aspect-[4/5] sm:aspect-[21/9] rounded-2xl overflow-hidden border border-slate-200/80 dark:border-slate-700/60 shadow-lg bg-slate-900">
-                            <AnimatePresence mode="wait">
-                                {mayorActive ? (
-                                    <motion.div
-                                        key="mayor"
-                                        initial={reducedMotion ? false : { opacity: 0 }}
-                                        animate={{ opacity: 1 }}
-                                        exit={reducedMotion ? {} : { opacity: 0 }}
-                                        transition={{ duration: 0.6 }}
-                                        className="absolute inset-0 flex flex-col sm:flex-row"
-                                    >
-                                        <div className="w-full sm:w-1/2 h-1/2 sm:h-full bg-slate-900 p-6 sm:p-10 flex flex-col justify-center order-2 sm:order-1 relative border-r border-slate-800">
-                                            <div className="relative z-10">
-                                                <span className="inline-block self-start px-3 py-1 bg-red-900/60 border border-red-500/50 text-red-200 text-xs font-extrabold uppercase tracking-wider rounded-full mb-3">
-                                                    Municipal Mayor
-                                                </span>
-                                                <h3 className="font-outfit font-extrabold text-2xl sm:text-4xl text-white mb-2">Hon. Jay Francis D. Bago</h3>
-                                                <p className="text-xs sm:text-sm text-slate-300 leading-relaxed line-clamp-3 sm:line-clamp-none">
+                        {/* Premium Leadership Card — Split Layout */}
+                        <div className="relative rounded-3xl overflow-hidden shadow-2xl bg-slate-950 border border-slate-800/80">
+
+                            {/* Ambient glow behind card */}
+                            <div className={`absolute -inset-1 rounded-3xl blur-2xl opacity-20 transition-colors duration-700 pointer-events-none ${mayorActive ? 'bg-red-500' : 'bg-blue-500'}`} />
+
+                            <div className="relative grid grid-cols-1 lg:grid-cols-2 min-h-[480px] sm:min-h-[540px]">
+
+                                {/* ═══ LEFT: Text Content Panel ═══ */}
+                                <div className="relative z-10 flex flex-col justify-between p-8 sm:p-12 lg:p-14 bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950">
+
+                                    {/* Decorative corner accent */}
+                                    <div className={`absolute top-0 left-0 w-1.5 h-full ${mayorActive ? 'bg-gradient-to-b from-red-500 via-red-400/60 to-transparent' : 'bg-gradient-to-b from-blue-500 via-blue-400/60 to-transparent'}`} />
+
+                                    {/* Decorative geometric shapes */}
+                                    <div className="absolute top-12 right-8 w-48 h-48 rounded-full border border-white/[0.03] pointer-events-none" />
+                                    <div className="absolute -bottom-16 -right-16 w-72 h-72 rounded-full border border-white/[0.02] pointer-events-none" />
+
+                                    {/* Tab Switcher */}
+                                    <div className="flex items-center gap-1 p-1 rounded-2xl bg-white/[0.06] backdrop-blur-md border border-white/[0.08] w-fit mb-8 shadow-lg relative z-10">
+                                        <button
+                                            type="button"
+                                            onClick={() => setMayorActive(true)}
+                                            className={`relative px-4 py-2 rounded-xl text-[11px] font-extrabold uppercase tracking-widest transition-all duration-300 ${mayorActive
+                                                ? 'text-white shadow-lg'
+                                                : 'text-white/50 hover:text-white/80'
+                                            }`}
+                                        >
+                                            {mayorActive && (
+                                                <motion.span
+                                                    layoutId="tab-pill"
+                                                    className="absolute inset-0 rounded-xl bg-red-600/80 backdrop-blur-sm"
+                                                    transition={{ type: 'spring', stiffness: 380, damping: 30 }}
+                                                />
+                                            )}
+                                            <span className="relative flex items-center gap-1.5">
+                                                <span className="w-1.5 h-1.5 rounded-full bg-current" />
+                                                Mayor Bago
+                                            </span>
+                                        </button>
+                                        <button
+                                            type="button"
+                                            onClick={() => setMayorActive(false)}
+                                            className={`relative px-4 py-2 rounded-xl text-[11px] font-extrabold uppercase tracking-widest transition-all duration-300 ${!mayorActive
+                                                ? 'text-white shadow-lg'
+                                                : 'text-white/50 hover:text-white/80'
+                                            }`}
+                                        >
+                                            {!mayorActive && (
+                                                <motion.span
+                                                    layoutId="tab-pill"
+                                                    className="absolute inset-0 rounded-xl bg-blue-600/80 backdrop-blur-sm"
+                                                    transition={{ type: 'spring', stiffness: 380, damping: 30 }}
+                                                />
+                                            )}
+                                            <span className="relative flex items-center gap-1.5">
+                                                <span className="w-1.5 h-1.5 rounded-full bg-current" />
+                                                Vice Mayor Daroy
+                                            </span>
+                                        </button>
+                                    </div>
+
+                                    {/* Leader Info — animated cross-fade */}
+                                    <AnimatePresence mode="wait">
+                                        {mayorActive ? (
+                                            <motion.div
+                                                key="mayor-info"
+                                                initial={{ opacity: 0, y: 16 }}
+                                                animate={{ opacity: 1, y: 0 }}
+                                                exit={{ opacity: 0, y: -12 }}
+                                                transition={{ duration: 0.4, ease: 'easeOut' }}
+                                                className="flex-1 flex flex-col justify-center relative z-10"
+                                            >
+                                                {/* Role badge */}
+                                                <div className="inline-flex items-center gap-2 mb-4 w-fit">
+                                                    <span className="w-8 h-px bg-red-400" />
+                                                    <span className="text-[10px] font-extrabold uppercase tracking-[0.25em] text-red-300">
+                                                        Municipal Mayor
+                                                    </span>
+                                                </div>
+
+                                                {/* Name */}
+                                                <h3 className="font-outfit font-black text-3xl sm:text-4xl lg:text-5xl text-white leading-tight mb-4 drop-shadow-lg">
+                                                    Hon. Atty.<br />
+                                                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-white to-slate-300">
+                                                        Jay Francis D. Bago
+                                                    </span>
+                                                </h3>
+
+                                                {/* Description */}
+                                                <p className="text-sm text-slate-300/90 leading-relaxed max-w-sm mb-6">
                                                     Advocating for participatory local governance and robust cooperative empowerment to build a resilient, forward-looking Opol.
                                                 </p>
-                                            </div>
-                                        </div>
-                                        <div className="w-full sm:w-1/2 h-1/2 sm:h-full relative order-1 sm:order-2 bg-slate-950">
-                                            <img
-                                                src={jayImg}
-                                                alt="Municipal Mayor Hon. Jay Francis D. Bago"
-                                                className="w-full h-full object-cover object-top"
-                                                onError={(e) => {
-                                                    e.target.src = 'https://ui-avatars.com/api/?name=Jay+Bago&background=1d4ed8&color=fff&size=512';
-                                                }}
-                                            />
-                                        </div>
-                                    </motion.div>
-                                ) : (
-                                    <motion.div
-                                        key="vice-mayor"
-                                        initial={reducedMotion ? false : { opacity: 0 }}
-                                        animate={{ opacity: 1 }}
-                                        exit={reducedMotion ? {} : { opacity: 0 }}
-                                        transition={{ duration: 0.6 }}
-                                        className="absolute inset-0 flex flex-col sm:flex-row"
-                                    >
-                                        <div className="w-full sm:w-1/2 h-1/2 sm:h-full bg-slate-900 p-6 sm:p-10 flex flex-col justify-center order-2 sm:order-1 relative border-r border-slate-800">
-                                            <div className="relative z-10">
-                                                <span className="inline-block self-start px-3 py-1 bg-blue-900/60 border border-blue-500/50 text-blue-200 text-xs font-extrabold uppercase tracking-wider rounded-full mb-3">
-                                                    Municipal Vice Mayor
-                                                </span>
-                                                <h3 className="font-outfit font-extrabold text-2xl sm:text-4xl text-white mb-2">Hon. Danilo E. Daroy, Jr.</h3>
-                                                <p className="text-xs sm:text-sm text-slate-300 leading-relaxed line-clamp-3 sm:line-clamp-none">
+
+                                                {/* Stat pills */}
+                                                <div className="flex flex-wrap gap-2">
+                                                    <span className="px-3 py-1.5 rounded-xl bg-white/[0.07] backdrop-blur-sm border border-white/[0.1] text-[11px] font-bold text-white/80">
+                                                        🏛 Municipality of Opol
+                                                    </span>
+                                                    <span className="px-3 py-1.5 rounded-xl bg-red-500/20 backdrop-blur-sm border border-red-400/30 text-[11px] font-bold text-red-200">
+                                                        Bag-ong Opol Vision
+                                                    </span>
+                                                </div>
+                                            </motion.div>
+                                        ) : (
+                                            <motion.div
+                                                key="vm-info"
+                                                initial={{ opacity: 0, y: 16 }}
+                                                animate={{ opacity: 1, y: 0 }}
+                                                exit={{ opacity: 0, y: -12 }}
+                                                transition={{ duration: 0.4, ease: 'easeOut' }}
+                                                className="flex-1 flex flex-col justify-center relative z-10"
+                                            >
+                                                {/* Role badge */}
+                                                <div className="inline-flex items-center gap-2 mb-4 w-fit">
+                                                    <span className="w-8 h-px bg-blue-400" />
+                                                    <span className="text-[10px] font-extrabold uppercase tracking-[0.25em] text-blue-300">
+                                                        Municipal Vice Mayor
+                                                    </span>
+                                                </div>
+
+                                                {/* Name */}
+                                                <h3 className="font-outfit font-black text-3xl sm:text-4xl lg:text-5xl text-white leading-tight mb-4 drop-shadow-lg">
+                                                    Hon.<br />
+                                                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-white to-slate-300">
+                                                        Danilo E. Daroy, Jr.
+                                                    </span>
+                                                </h3>
+
+                                                {/* Description */}
+                                                <p className="text-sm text-slate-300/90 leading-relaxed max-w-sm mb-6">
                                                     Spearheading legislative measures in the Sangguniang Bayan that support cooperative incentives, social enterprise, and livelihood development.
                                                 </p>
-                                            </div>
-                                        </div>
-                                        <div className="w-full sm:w-1/2 h-1/2 sm:h-full relative order-1 sm:order-2 bg-slate-950">
+
+                                                {/* Stat pills */}
+                                                <div className="flex flex-wrap gap-2">
+                                                    <span className="px-3 py-1.5 rounded-xl bg-white/[0.07] backdrop-blur-sm border border-white/[0.1] text-[11px] font-bold text-white/80">
+                                                        🏛 Municipality of Opol
+                                                    </span>
+                                                    <span className="px-3 py-1.5 rounded-xl bg-blue-500/20 backdrop-blur-sm border border-blue-400/30 text-[11px] font-bold text-blue-200">
+                                                        Sangguniang Bayan
+                                                    </span>
+                                                </div>
+                                            </motion.div>
+                                        )}
+                                    </AnimatePresence>
+
+                                    {/* Bottom decorative divider */}
+                                    <div className="mt-8 flex items-center gap-3 relative z-10">
+                                        <div className={`h-px flex-1 ${mayorActive ? 'bg-gradient-to-r from-red-500/60 to-transparent' : 'bg-gradient-to-r from-blue-500/60 to-transparent'}`} />
+                                        <span className="text-[10px] text-white/30 uppercase tracking-widest font-bold">LGU Opol</span>
+                                    </div>
+                                </div>
+
+                                {/* ═══ RIGHT: Portrait Photo Panel ═══ */}
+                                <div className="relative overflow-hidden bg-slate-900 min-h-[320px] sm:min-h-[400px] lg:min-h-0">
+                                    <AnimatePresence mode="wait">
+                                        <motion.div
+                                            key={mayorActive ? 'mayor-portrait' : 'vm-portrait'}
+                                            initial={{ opacity: 0, scale: 1.06 }}
+                                            animate={{ opacity: 1, scale: 1 }}
+                                            exit={{ opacity: 0, scale: 1.06 }}
+                                            transition={{ duration: 0.7, ease: 'easeInOut' }}
+                                            className="absolute inset-0"
+                                        >
                                             <img
-                                                src={voxImg}
-                                                alt="Municipal Vice Mayor Hon. Danilo E. Daroy, Jr."
-                                                className="w-full h-full object-cover object-top"
+                                                src={mayorActive ? jayImg : voxImg}
+                                                alt={mayorActive ? 'Mayor Jay Francis D. Bago' : 'Vice Mayor Danilo E. Daroy Jr.'}
+                                                className="w-full h-full object-cover"
+                                                style={{ objectPosition: 'center 20%' }}
                                                 onError={(e) => {
-                                                    e.target.src = 'https://ui-avatars.com/api/?name=Danilo+Daroy&background=dc2626&color=fff&size=512';
+                                                    e.target.src = mayorActive
+                                                        ? 'https://ui-avatars.com/api/?name=Jay+Bago&background=1d4ed8&color=fff&size=512'
+                                                        : 'https://ui-avatars.com/api/?name=Danilo+Daroy&background=dc2626&color=fff&size=512';
                                                 }}
                                             />
-                                        </div>
-                                    </motion.div>
-                                )}
-                            </AnimatePresence>
+                                            {/* Gentle left edge blend — only narrow strip */}
+                                            <div className="absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-slate-950/60 to-transparent" />
+                                            {/* Very subtle bottom vignette */}
+                                            <div className="absolute bottom-0 inset-x-0 h-32 bg-gradient-to-t from-slate-950/40 to-transparent" />
+                                        </motion.div>
+                                    </AnimatePresence>
 
-                            {/* Slide indicators with labels */}
-                            <div className="absolute bottom-4 left-1/2 -translate-x-1/2 z-20 flex items-center gap-3">
-                                <button
-                                    type="button"
-                                    onClick={() => setMayorActive(true)}
-                                    aria-label="Show mayor"
-                                    className={`flex items-center gap-2 px-3 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-wider transition-all duration-300 ${mayorActive ? 'bg-white text-slate-900 shadow-md' : 'bg-slate-800 text-white/70 hover:bg-slate-700'
-                                        }`}
-                                >
-                                    <span className={`w-1.5 h-1.5 rounded-full ${mayorActive ? 'bg-red-600' : 'bg-slate-400'}`} />
-                                    Mayor Jay Bago
-                                </button>
-                                <button
-                                    type="button"
-                                    onClick={() => setMayorActive(false)}
-                                    aria-label="Show vice mayor"
-                                    className={`flex items-center gap-2 px-3 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-wider transition-all duration-300 ${!mayorActive ? 'bg-white text-slate-900 shadow-md' : 'bg-slate-800 text-white/70 hover:bg-slate-700'
-                                        }`}
-                                >
-                                    <span className={`w-1.5 h-1.5 rounded-full ${!mayorActive ? 'bg-blue-600' : 'bg-slate-400'}`} />
-                                    Vice Mayor Danilo Daroy, Jr.
-                                </button>
+                                    {/* Decorative accent ring */}
+                                    <div className={`absolute -bottom-24 -right-24 w-72 h-72 rounded-full border-2 pointer-events-none transition-colors duration-700 ${mayorActive ? 'border-red-500/10' : 'border-blue-500/10'}`} />
+                                    <div className={`absolute -top-16 -right-16 w-56 h-56 rounded-full border pointer-events-none transition-colors duration-700 ${mayorActive ? 'border-red-400/5' : 'border-blue-400/5'}`} />
+
+                                    {/* Name overlay on mobile (when portrait is below) */}
+                                    <div className="absolute bottom-0 inset-x-0 p-6 bg-gradient-to-t from-slate-950/90 via-slate-950/40 to-transparent lg:hidden">
+                                        <span className={`text-[10px] font-extrabold uppercase tracking-widest ${mayorActive ? 'text-red-300' : 'text-blue-300'}`}>
+                                            {mayorActive ? 'Municipal Mayor' : 'Municipal Vice Mayor'}
+                                        </span>
+                                        <h4 className="font-outfit font-black text-2xl text-white mt-1">
+                                            {mayorActive ? 'Hon. Atty. Jay Francis D. Bago' : 'Hon. Danilo E. Daroy, Jr.'}
+                                        </h4>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </AnimatedSection>
                 </section>
+
 
                 {/* ══════════════════════════════════════════════════════════
                     SECTION 5: MCDO DEDICATED TEAM

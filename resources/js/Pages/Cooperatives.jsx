@@ -1,4 +1,5 @@
 import { useState, useMemo } from 'react';
+import mcdcLogo from '../../Images/Municipal Cooperative Development Office.png';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
     InboxIcon,
@@ -742,6 +743,169 @@ export default function Cooperatives() {
                                     </div>
                                 ))}
                             </div>
+                        </div>
+                    </div>
+                </AnimatedSection>
+
+                {/* ── Officers of the Council ── */}
+                <AnimatedSection className="max-w-6xl mx-auto mt-16 sm:mt-20">
+                    {/* Section Eyebrow & Heading */}
+                    <div className="mb-8 text-center">
+                        <div className="inline-flex items-center gap-1.5 text-xs font-extrabold uppercase tracking-wider text-amber-700 dark:text-amber-300 bg-amber-50 dark:bg-amber-950/60 px-3 py-1 rounded-full border border-amber-200 dark:border-amber-800 mb-3">
+                            <UserCircleIcon className="w-3.5 h-3.5" />
+                            <span>Municipal Cooperative Development Council</span>
+                        </div>
+                        <h3 className="font-outfit text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white">
+                            Officers of the Council
+                        </h3>
+                        <p className="text-xs sm:text-sm text-slate-500 dark:text-slate-400 mt-2 max-w-2xl mx-auto leading-relaxed">
+                            Elected and appointed officers of the Municipal Cooperative Development Council of Opol, representing the diverse cooperative sectors in the municipality.
+                        </p>
+                    </div>
+
+                    {/* Officers Table Card */}
+                    <div className="relative overflow-hidden rounded-2xl border border-slate-200 dark:border-slate-700/80 shadow-xl">
+                        {/* Gradient Header Banner */}
+                        <div className="relative px-6 sm:px-10 py-6 bg-gradient-to-r from-blue-700 via-blue-600 to-indigo-600 overflow-hidden">
+                            <div className="absolute inset-0 opacity-10"
+                                style={{
+                                    backgroundImage: 'repeating-linear-gradient(45deg, transparent, transparent 20px, rgba(255,255,255,0.05) 20px, rgba(255,255,255,0.05) 40px)'
+                                }}
+                            />
+                            <div className="absolute -right-8 -top-8 w-40 h-40 rounded-full bg-white/5" />
+                            <div className="absolute -left-4 -bottom-10 w-32 h-32 rounded-full bg-white/5" />
+                            <div className="relative flex flex-col sm:flex-row sm:items-center gap-4">
+                                {/* MCDC Seal Logo */}
+                                <div className="shrink-0 flex items-center justify-center">
+                                    <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full ring-2 ring-white/30 ring-offset-2 ring-offset-blue-600 shadow-xl overflow-hidden bg-white p-0.5">
+                                        <img
+                                            src={mcdcLogo}
+                                            alt="Municipal Cooperative Development Council Seal"
+                                            className="w-full h-full object-contain rounded-full"
+                                        />
+                                    </div>
+                                </div>
+                                {/* Title & Badges */}
+                                <div className="flex-1 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+                                    <div>
+                                        <p className="text-[10px] font-extrabold uppercase tracking-[0.2em] text-blue-200 mb-1">Official Roster — MCDC Opol</p>
+                                        <h4 className="font-outfit text-xl sm:text-2xl font-extrabold text-white leading-tight">Officers of the Council</h4>
+                                        <p className="text-xs text-blue-100/80 mt-0.5">Municipal Cooperative Development Council</p>
+                                    </div>
+                                    <div className="flex items-center gap-2 shrink-0">
+                                        <div className="px-3 py-1.5 rounded-xl bg-white/15 border border-white/20 backdrop-blur-sm text-xs font-bold text-white">
+                                            Municipality of Opol
+                                        </div>
+                                        <div className="px-3 py-1.5 rounded-xl bg-amber-400/20 border border-amber-300/30 backdrop-blur-sm text-xs font-bold text-amber-200">
+                                            MCDC
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Column Headers */}
+                        <div className="grid grid-cols-12 bg-slate-100 dark:bg-slate-800/80 border-b border-slate-200 dark:border-slate-700/60 px-6 sm:px-10 py-3">
+                            <div className="col-span-5 text-[10px] font-extrabold uppercase tracking-widest text-slate-400 dark:text-slate-500">Full Name</div>
+                            <div className="col-span-3 text-[10px] font-extrabold uppercase tracking-widest text-slate-400 dark:text-slate-500">Position</div>
+                            <div className="col-span-4 text-[10px] font-extrabold uppercase tracking-widest text-slate-400 dark:text-slate-500">Organization Represented</div>
+                        </div>
+
+                        {/* Officer Rows */}
+                        <div className="divide-y divide-slate-100 dark:divide-slate-800/80 bg-white dark:bg-slate-900/60">
+                            {[
+                                {
+                                    no: 1,
+                                    name: 'Atty. Kenneth M. Kempis',
+                                    position: 'Chairman',
+                                    organization: 'Opol Employees MPC',
+                                    positionColor: 'bg-blue-600',
+                                    positionLight: 'bg-blue-50 dark:bg-blue-950/60 text-blue-700 dark:text-blue-300 border-blue-200 dark:border-blue-800',
+                                },
+                                {
+                                    no: 2,
+                                    name: 'Dante C. Yasay',
+                                    position: 'Vice Chairman',
+                                    organization: 'Bonbon Opol Samahang Nayon MPC',
+                                    positionColor: 'bg-indigo-600',
+                                    positionLight: 'bg-indigo-50 dark:bg-indigo-950/60 text-indigo-700 dark:text-indigo-300 border-indigo-200 dark:border-indigo-800',
+                                },
+                                {
+                                    no: 3,
+                                    name: 'Rowena M. Apdian',
+                                    position: 'Secretary',
+                                    organization: 'Misamis Oriental Farmers Credit Cooperative (MOFACCO)',
+                                    positionColor: 'bg-emerald-600',
+                                    positionLight: 'bg-emerald-50 dark:bg-emerald-950/60 text-emerald-700 dark:text-emerald-300 border-emerald-200 dark:border-emerald-800',
+                                },
+                                {
+                                    no: 4,
+                                    name: 'Genalin Divinosa',
+                                    position: 'Treasurer',
+                                    organization: 'Entrepreneurial and Employed Credit Cooperative (EECC)',
+                                    positionColor: 'bg-amber-600',
+                                    positionLight: 'bg-amber-50 dark:bg-amber-950/60 text-amber-700 dark:text-amber-300 border-amber-200 dark:border-amber-800',
+                                },
+                                {
+                                    no: 5,
+                                    name: 'Al Adlaw',
+                                    position: 'Auditor',
+                                    organization: 'Opol Central School Teachers and Employees Credit Cooperative (OCSTECC)',
+                                    positionColor: 'bg-purple-600',
+                                    positionLight: 'bg-purple-50 dark:bg-purple-950/60 text-purple-700 dark:text-purple-300 border-purple-200 dark:border-purple-800',
+                                },
+                            ].map((officer, idx) => (
+                                <motion.div
+                                    key={officer.no}
+                                    initial={{ opacity: 0, x: -10 }}
+                                    whileInView={{ opacity: 1, x: 0 }}
+                                    viewport={{ once: true }}
+                                    transition={{ delay: idx * 0.07, duration: 0.35 }}
+                                    className="grid grid-cols-12 items-center px-6 sm:px-10 py-4 sm:py-5 hover:bg-slate-50 dark:hover:bg-slate-800/40 transition-colors duration-150 group"
+                                >
+                                    {/* Full Name */}
+                                    <div className="col-span-5 pr-3">
+                                        <div className="flex items-center gap-2.5">
+                                            <div className={`w-8 h-8 rounded-full ${officer.positionColor} flex items-center justify-center shrink-0 shadow-sm`}>
+                                                <span className="text-xs font-extrabold text-white">
+                                                    {officer.name.split(' ').filter(w => /^[A-Z]/.test(w)).slice(0, 2).map(w => w[0]).join('')}
+                                                </span>
+                                            </div>
+                                            <div>
+                                                <p className="font-outfit font-bold text-sm text-slate-900 dark:text-white leading-tight group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+                                                    {officer.name}
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    {/* Position Badge */}
+                                    <div className="col-span-3 pr-3">
+                                        <span className={`inline-flex items-center px-2.5 py-1 rounded-lg text-[11px] font-extrabold uppercase tracking-wide border ${officer.positionLight}`}>
+                                            {officer.position}
+                                        </span>
+                                    </div>
+
+                                    {/* Organization */}
+                                    <div className="col-span-4">
+                                        <p className="text-xs font-medium text-slate-600 dark:text-slate-300 leading-snug">
+                                            {officer.organization}
+                                        </p>
+                                    </div>
+                                </motion.div>
+                            ))}
+                        </div>
+
+                        {/* Table Footer Note */}
+                        <div className="px-6 sm:px-10 py-3.5 bg-slate-50 dark:bg-slate-800/60 border-t border-slate-200 dark:border-slate-700/60 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                            <p className="text-[11px] text-slate-500 dark:text-slate-400 flex items-center gap-1.5">
+                                <InformationCircleIcon className="w-3.5 h-3.5 shrink-0" />
+                                <span>Officers are elected during the Annual General Assembly of the Municipal Cooperative Development Council (MCDC).</span>
+                            </p>
+                            <span className="inline-flex items-center gap-1 text-[10px] font-extrabold uppercase tracking-wider text-emerald-700 dark:text-emerald-300 bg-emerald-50 dark:bg-emerald-950/60 border border-emerald-200 dark:border-emerald-800 px-2.5 py-1 rounded-full shrink-0">
+                                <CheckBadgeIcon className="w-3 h-3" />
+                                <span>Duly Constituted</span>
+                            </span>
                         </div>
                     </div>
                 </AnimatedSection>

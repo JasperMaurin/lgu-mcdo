@@ -63,6 +63,10 @@
     "file": "assets/4-BHqyx4Mc.jpg",
     "src": "resources/Images/Monitoring/4.jpg"
   },
+  "resources/Images/Municipal Cooperative Development Office.png": {
+    "file": "assets/Municipal Cooperative Development Office-DZ3W_qt2.png",
+    "src": "resources/Images/Municipal Cooperative Development Office.png"
+  },
   "resources/Images/PRS/5.jpg": {
     "file": "assets/5-DfAgKUdW.jpg",
     "src": "resources/Images/PRS/5.jpg"
@@ -82,6 +86,54 @@
   "resources/Images/bag-ong opol.jpg": {
     "file": "assets/bag-ong opol-Dt8FOg-4.jpg",
     "src": "resources/Images/bag-ong opol.jpg"
+  },
+  "resources/Images/barangay/Awang.jpg": {
+    "file": "assets/Awang-BC7GU6G1.jpg",
+    "src": "resources/Images/barangay/Awang.jpg"
+  },
+  "resources/Images/barangay/Bagocboc.jpg": {
+    "file": "assets/Bagocboc-DcFBsam6.jpg",
+    "src": "resources/Images/barangay/Bagocboc.jpg"
+  },
+  "resources/Images/barangay/Barra.jpg": {
+    "file": "assets/Barra-DRJq11nz.jpg",
+    "src": "resources/Images/barangay/Barra.jpg"
+  },
+  "resources/Images/barangay/Cauyonan.jpg": {
+    "file": "assets/Cauyonan-kMrvXZ0_.jpg",
+    "src": "resources/Images/barangay/Cauyonan.jpg"
+  },
+  "resources/Images/barangay/Malanang.jpg": {
+    "file": "assets/Malanang-Bbe3YFtD.jpg",
+    "src": "resources/Images/barangay/Malanang.jpg"
+  },
+  "resources/Images/barangay/Patag.jpg": {
+    "file": "assets/Patag-Bp_iZjNu.jpg",
+    "src": "resources/Images/barangay/Patag.jpg"
+  },
+  "resources/Images/barangay/Poblacion.jpg": {
+    "file": "assets/Poblacion-CbGOFjMu.jpg",
+    "src": "resources/Images/barangay/Poblacion.jpg"
+  },
+  "resources/Images/barangay/Taboc.jpg": {
+    "file": "assets/Taboc-2ZCaDqe7.jpg",
+    "src": "resources/Images/barangay/Taboc.jpg"
+  },
+  "resources/Images/barangay/bonbon.jpg": {
+    "file": "assets/bonbon-B6Vu1Gwz.jpg",
+    "src": "resources/Images/barangay/bonbon.jpg"
+  },
+  "resources/Images/barangay/igpit.jpg": {
+    "file": "assets/igpit-DEotewKw.jpg",
+    "src": "resources/Images/barangay/igpit.jpg"
+  },
+  "resources/Images/barangay/luyong bonbon.jpg": {
+    "file": "assets/luyong bonbon-D2hLUiOW.jpg",
+    "src": "resources/Images/barangay/luyong bonbon.jpg"
+  },
+  "resources/Images/barangay/tingalan.jpg": {
+    "file": "assets/tingalan-g5GQSaNi.jpg",
+    "src": "resources/Images/barangay/tingalan.jpg"
   },
   "resources/Images/clean up drive/10.jpg": {
     "file": "assets/10-Cw6iV7Ih.jpg",
@@ -120,21 +172,21 @@
     "src": "resources/Images/merlyn.jpg"
   },
   "resources/Images/sketch/balay.jpg": {
-    "file": "assets/balay-CtfkWzsp.jpg",
+    "file": "assets/balay-BbXnFj-o.jpg",
     "src": "resources/Images/sketch/balay.jpg"
   },
   "resources/css/app.css": {
-    "file": "assets/app-c9Tm_4Ju.css",
+    "file": "assets/app-BPwAlb7t.css",
     "src": "resources/css/app.css",
     "isEntry": true
   },
   "resources/js/app.jsx": {
-    "file": "assets/app-CQJDMsbi.js",
+    "file": "assets/app-CGyUsdN2.js",
     "name": "app",
     "src": "resources/js/app.jsx",
     "isEntry": true,
     "css": [
-      "assets/app-c9Tm_4Ju.css"
+      "assets/app-BPwAlb7t.css"
     ],
     "assets": [
       "assets/Vox-CpwE0YD8.jpg",
@@ -146,7 +198,19 @@
       "assets/mcdologs-CosqWPEp.jpg",
       "assets/Coop-B640URS8.jpg",
       "assets/bag-ong opol-Dt8FOg-4.jpg",
-      "assets/balay-CtfkWzsp.jpg",
+      "assets/Awang-BC7GU6G1.jpg",
+      "assets/Bagocboc-DcFBsam6.jpg",
+      "assets/Barra-DRJq11nz.jpg",
+      "assets/Cauyonan-kMrvXZ0_.jpg",
+      "assets/Malanang-Bbe3YFtD.jpg",
+      "assets/Patag-Bp_iZjNu.jpg",
+      "assets/Poblacion-CbGOFjMu.jpg",
+      "assets/Taboc-2ZCaDqe7.jpg",
+      "assets/bonbon-B6Vu1Gwz.jpg",
+      "assets/igpit-DEotewKw.jpg",
+      "assets/luyong bonbon-D2hLUiOW.jpg",
+      "assets/tingalan-g5GQSaNi.jpg",
+      "assets/balay-BbXnFj-o.jpg",
       "assets/e-Q0w6s2fV.jpg",
       "assets/q-Dazshv_I.jpg",
       "assets/r-BhHCCEf6.jpg",
@@ -167,7 +231,8 @@
       "assets/4-BHqyx4Mc.jpg",
       "assets/5-DfAgKUdW.jpg",
       "assets/6-bPkuxwP4.jpg",
-      "assets/7-Dq-Dk207.jpg"
+      "assets/7-Dq-Dk207.jpg",
+      "assets/Municipal Cooperative Development Office-DZ3W_qt2.png"
     ]
   }
 }
