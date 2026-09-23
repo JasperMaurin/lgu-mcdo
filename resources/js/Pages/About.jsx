@@ -1263,7 +1263,7 @@ export default function About() {
                                             className={`relative px-4 py-2 rounded-xl text-[11px] font-extrabold uppercase tracking-widest transition-all duration-300 ${mayorActive
                                                 ? 'text-white shadow-lg'
                                                 : 'text-white/50 hover:text-white/80'
-                                            }`}
+                                                }`}
                                         >
                                             {mayorActive && (
                                                 <motion.span
@@ -1283,7 +1283,7 @@ export default function About() {
                                             className={`relative px-4 py-2 rounded-xl text-[11px] font-extrabold uppercase tracking-widest transition-all duration-300 ${!mayorActive
                                                 ? 'text-white shadow-lg'
                                                 : 'text-white/50 hover:text-white/80'
-                                            }`}
+                                                }`}
                                         >
                                             {!mayorActive && (
                                                 <motion.span
@@ -1322,7 +1322,7 @@ export default function About() {
                                                 <h3 className="font-outfit font-black text-3xl sm:text-4xl lg:text-5xl text-white leading-tight mb-4 drop-shadow-lg">
                                                     Hon. Atty.<br />
                                                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-white to-slate-300">
-                                                        Jay Francis D. Bago
+                                                        Jayfrancis D. Bago
                                                     </span>
                                                 </h3>
 
