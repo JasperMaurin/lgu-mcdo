@@ -15,6 +15,7 @@ import {
 
 const TIMELINE_HIGHLIGHTS = [
     {
+        id: 'clean-up-drive',
         date: 'July 4, 2026',
         title: 'Municipal Cooperative Clean-Up Drive',
         venue: 'Taboc Gym, Opol',
@@ -23,6 +24,7 @@ const TIMELINE_HIGHLIGHTS = [
         badgeColor: 'bg-emerald-100 text-emerald-800 dark:bg-emerald-950/70 dark:text-emerald-300 border-emerald-200 dark:border-emerald-800',
     },
     {
+        id: 'pre-registration-seminar',
         date: 'August 5, 2026',
         title: 'Pre-Registration Seminar (PRS) with CDA',
         venue: 'Citihomes, Malanang, Opol',
@@ -31,6 +33,7 @@ const TIMELINE_HIGHLIGHTS = [
         badgeColor: 'bg-indigo-100 text-indigo-800 dark:bg-indigo-950/70 dark:text-indigo-300 border-indigo-200 dark:border-indigo-800',
     },
     {
+        id: 'monitoring-evaluation',
         date: 'August 18, 2026',
         title: 'Monitoring & Evaluation of 3 Cooperatives',
         venue: 'Tuling, Patag & Poblacion',
@@ -39,12 +42,22 @@ const TIMELINE_HIGHLIGHTS = [
         badgeColor: 'bg-blue-100 text-blue-800 dark:bg-blue-950/70 dark:text-blue-300 border-blue-200 dark:border-blue-800',
     },
     {
+        id: 'civic-parade',
         date: 'August 2026',
         title: 'Municipal Civic Parade & Solidarity Walk',
         venue: 'Poblacion to Municipal Grounds',
         category: 'Civic & Community Solidarity',
         accent: 'red',
         badgeColor: 'bg-red-100 text-red-800 dark:bg-red-950/70 dark:text-red-300 border-red-200 dark:border-red-800',
+    },
+    {
+        id: 'oath-taking-ceremony',
+        date: 'September 17, 2026',
+        title: 'MCDC Meeting & Oath-Taking Ceremony',
+        venue: 'Municipal Hall, Opol',
+        category: 'Council Governance',
+        accent: 'blue',
+        badgeColor: 'bg-blue-100 text-blue-800 dark:bg-blue-950/70 dark:text-blue-300 border-blue-200 dark:border-blue-800',
     },
 ];
 
@@ -82,11 +95,11 @@ export default function Achievements() {
                             </span>
                         </div>
 
-                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
                             {TIMELINE_HIGHLIGHTS.map((item, idx) => (
                                 <a
                                     key={idx}
-                                    href={`#${item.title.toLowerCase().includes('parade') ? 'civic-parade' : item.title.toLowerCase().includes('clean') ? 'clean-up-drive' : item.title.toLowerCase().includes('monitoring') ? 'monitoring-evaluation' : 'pre-registration-seminar'}`}
+                                    href={`#${item.id}`}
                                     className="group p-4 rounded-xl border border-slate-200/80 dark:border-slate-800 hover:border-blue-500 dark:hover:border-blue-500 bg-slate-50/60 dark:bg-slate-800/40 hover:bg-white dark:hover:bg-slate-800 transition-all duration-200"
                                 >
                                     <div className="flex items-center justify-between mb-2">

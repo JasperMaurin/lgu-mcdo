@@ -1,4 +1,64 @@
 {
+  "resources/Images/5 pilars/BuildGreen_Emblem.png": {
+    "file": "assets/BuildGreen_Emblem-QumWnByK.png",
+    "src": "resources/Images/5 pilars/BuildGreen_Emblem.png"
+  },
+  "resources/Images/5 pilars/BuildGreen_Logo.png": {
+    "file": "assets/BuildGreen_Logo-DsmOWLSo.png",
+    "src": "resources/Images/5 pilars/BuildGreen_Logo.png"
+  },
+  "resources/Images/5 pilars/BuildGreen_Logo_Dark.png": {
+    "file": "assets/BuildGreen_Logo_Dark-CvFO7hR3.png",
+    "src": "resources/Images/5 pilars/BuildGreen_Logo_Dark.png"
+  },
+  "resources/Images/5 pilars/CareForAll_Emblem.png": {
+    "file": "assets/CareForAll_Emblem-5_LptCe6.png",
+    "src": "resources/Images/5 pilars/CareForAll_Emblem.png"
+  },
+  "resources/Images/5 pilars/CareForAll_Logo.png": {
+    "file": "assets/CareForAll_Logo-Dq03z2-L.png",
+    "src": "resources/Images/5 pilars/CareForAll_Logo.png"
+  },
+  "resources/Images/5 pilars/CareForAll_Logo_Dark.png": {
+    "file": "assets/CareForAll_Logo_Dark-CZAlXjps.png",
+    "src": "resources/Images/5 pilars/CareForAll_Logo_Dark.png"
+  },
+  "resources/Images/5 pilars/GrowSmart_Emblem.png": {
+    "file": "assets/GrowSmart_Emblem-BJ59psvK.png",
+    "src": "resources/Images/5 pilars/GrowSmart_Emblem.png"
+  },
+  "resources/Images/5 pilars/GrowSmart_Logo.png": {
+    "file": "assets/GrowSmart_Logo-BgVc3LPS.png",
+    "src": "resources/Images/5 pilars/GrowSmart_Logo.png"
+  },
+  "resources/Images/5 pilars/GrowSmart_Logo_Dark.png": {
+    "file": "assets/GrowSmart_Logo_Dark-BoevC4rD.png",
+    "src": "resources/Images/5 pilars/GrowSmart_Logo_Dark.png"
+  },
+  "resources/Images/5 pilars/LeadOpenly_Emblem.png": {
+    "file": "assets/LeadOpenly_Emblem-C7Za3hY-.png",
+    "src": "resources/Images/5 pilars/LeadOpenly_Emblem.png"
+  },
+  "resources/Images/5 pilars/LeadOpenly_Logo.png": {
+    "file": "assets/LeadOpenly_Logo-CztU_-Gx.png",
+    "src": "resources/Images/5 pilars/LeadOpenly_Logo.png"
+  },
+  "resources/Images/5 pilars/LeadOpenly_Logo_Dark.png": {
+    "file": "assets/LeadOpenly_Logo_Dark-DFZH0aUu.png",
+    "src": "resources/Images/5 pilars/LeadOpenly_Logo_Dark.png"
+  },
+  "resources/Images/5 pilars/ProtectNature_Emblem.png": {
+    "file": "assets/ProtectNature_Emblem-DP4UgalF.png",
+    "src": "resources/Images/5 pilars/ProtectNature_Emblem.png"
+  },
+  "resources/Images/5 pilars/ProtectNature_Logo.png": {
+    "file": "assets/ProtectNature_Logo-9ZMmm1TH.png",
+    "src": "resources/Images/5 pilars/ProtectNature_Logo.png"
+  },
+  "resources/Images/5 pilars/ProtectNature_Logo_Dark.png": {
+    "file": "assets/ProtectNature_Logo_Dark-CaV-Lu4A.png",
+    "src": "resources/Images/5 pilars/ProtectNature_Logo_Dark.png"
+  },
   "resources/Images/Civic Parade/e.jpg": {
     "file": "assets/e-Q0w6s2fV.jpg",
     "src": "resources/Images/Civic Parade/e.jpg"
@@ -66,6 +126,26 @@
   "resources/Images/Municipal Cooperative Development Office.png": {
     "file": "assets/Municipal Cooperative Development Office-DZ3W_qt2.png",
     "src": "resources/Images/Municipal Cooperative Development Office.png"
+  },
+  "resources/Images/Oath-Taking Ceremony/1.png": {
+    "file": "assets/1-DvwYc0M_.png",
+    "src": "resources/Images/Oath-Taking Ceremony/1.png"
+  },
+  "resources/Images/Oath-Taking Ceremony/2.png": {
+    "file": "assets/2-j-FWWMM0.png",
+    "src": "resources/Images/Oath-Taking Ceremony/2.png"
+  },
+  "resources/Images/Oath-Taking Ceremony/3.png": {
+    "file": "assets/3-BlOR28oc.png",
+    "src": "resources/Images/Oath-Taking Ceremony/3.png"
+  },
+  "resources/Images/Oath-Taking Ceremony/4.png": {
+    "file": "assets/4-CwqFi_fT.png",
+    "src": "resources/Images/Oath-Taking Ceremony/4.png"
+  },
+  "resources/Images/Oath-Taking Ceremony/5.png": {
+    "file": "assets/5-BS8Hbkhy.png",
+    "src": "resources/Images/Oath-Taking Ceremony/5.png"
   },
   "resources/Images/PRS/5.jpg": {
     "file": "assets/5-DfAgKUdW.jpg",
@@ -176,17 +256,17 @@
     "src": "resources/Images/sketch/balay.jpg"
   },
   "resources/css/app.css": {
-    "file": "assets/app-BPwAlb7t.css",
+    "file": "assets/app-DBzrBv3y.css",
     "src": "resources/css/app.css",
     "isEntry": true
   },
   "resources/js/app.jsx": {
-    "file": "assets/app-CGyUsdN2.js",
+    "file": "assets/app-BRNbiw6Z.js",
     "name": "app",
     "src": "resources/js/app.jsx",
     "isEntry": true,
     "css": [
-      "assets/app-BPwAlb7t.css"
+      "assets/app-DBzrBv3y.css"
     ],
     "assets": [
       "assets/Vox-CpwE0YD8.jpg",
@@ -210,6 +290,21 @@
       "assets/igpit-DEotewKw.jpg",
       "assets/luyong bonbon-D2hLUiOW.jpg",
       "assets/tingalan-g5GQSaNi.jpg",
+      "assets/BuildGreen_Logo-DsmOWLSo.png",
+      "assets/BuildGreen_Logo_Dark-CvFO7hR3.png",
+      "assets/BuildGreen_Emblem-QumWnByK.png",
+      "assets/CareForAll_Logo-Dq03z2-L.png",
+      "assets/CareForAll_Logo_Dark-CZAlXjps.png",
+      "assets/CareForAll_Emblem-5_LptCe6.png",
+      "assets/GrowSmart_Logo-BgVc3LPS.png",
+      "assets/GrowSmart_Logo_Dark-BoevC4rD.png",
+      "assets/GrowSmart_Emblem-BJ59psvK.png",
+      "assets/LeadOpenly_Logo-CztU_-Gx.png",
+      "assets/LeadOpenly_Logo_Dark-DFZH0aUu.png",
+      "assets/LeadOpenly_Emblem-C7Za3hY-.png",
+      "assets/ProtectNature_Logo-9ZMmm1TH.png",
+      "assets/ProtectNature_Logo_Dark-CaV-Lu4A.png",
+      "assets/ProtectNature_Emblem-DP4UgalF.png",
       "assets/balay-BbXnFj-o.jpg",
       "assets/e-Q0w6s2fV.jpg",
       "assets/q-Dazshv_I.jpg",
@@ -232,6 +327,11 @@
       "assets/5-DfAgKUdW.jpg",
       "assets/6-bPkuxwP4.jpg",
       "assets/7-Dq-Dk207.jpg",
+      "assets/1-DvwYc0M_.png",
+      "assets/2-j-FWWMM0.png",
+      "assets/3-BlOR28oc.png",
+      "assets/4-CwqFi_fT.png",
+      "assets/5-BS8Hbkhy.png",
       "assets/Municipal Cooperative Development Office-DZ3W_qt2.png"
     ]
   }

@@ -27,15 +27,93 @@ import prs5 from '../../Images/PRS/5.jpg';
 import prs6 from '../../Images/PRS/6.jpg';
 import prs7 from '../../Images/PRS/7.jpg';
 
+// Oath-Taking Ceremony Photos
+import oath1 from '../../Images/Oath-Taking Ceremony/1.png';
+import oath2 from '../../Images/Oath-Taking Ceremony/2.png';
+import oath3 from '../../Images/Oath-Taking Ceremony/3.png';
+import oath4 from '../../Images/Oath-Taking Ceremony/4.png';
+import oath5 from '../../Images/Oath-Taking Ceremony/5.png';
+
 export const ACHIEVEMENTS_CATEGORIES = [
     { key: 'all', label: 'All Achievements' },
+    { key: 'governance', label: 'Governance & Council' },
     { key: 'civic', label: 'Civic & Solidarity' },
     { key: 'environment', label: 'Environmental Action' },
-    { key: 'governance', label: 'Governance & M&E' },
     { key: 'formation', label: 'Formation & Training' },
 ];
 
 export const ACHIEVEMENTS_DATA = [
+    {
+        id: 'oath-taking-ceremony',
+        slug: 'oath-taking-ceremony',
+        title: 'MCDC Monthly Meeting & Oath-Taking Ceremony',
+        tagline: 'May we continue to work together in the spirit of cooperation, unity, and service. 💙❤️',
+        category: 'Council Governance & Leadership',
+        categoryKey: 'governance',
+        badge: 'Oath-Taking Milestone',
+        accent: 'blue',
+        accentColor: 'text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-950/60 border-blue-200 dark:border-blue-900',
+        date: 'September 17, 2026',
+        periodLabel: 'Council Milestone',
+        venue: 'Municipal Conference Hall, Opol, Misamis Oriental',
+        leadAgency: 'MCDC Opol • LGU Opol • Office of the Municipal Mayor',
+        featured: true,
+
+        // Official English Executive Narrative
+        executiveSummary:
+            'The Municipal Cooperative Development Council (MCDC) successfully conducted its monthly meeting and Oath-Taking Ceremony on September 17, 2026. The activity brought together the members of the MCDC to strengthen coordination, discuss important cooperative development matters, and reaffirm their commitment to supporting and promoting the growth of cooperatives in the Municipality of Opol. Sincere gratitude is extended to Hon. Rhally Mae D. Piit, SB Member, Chairman on Livelihood and Cooperative, and Hon. Atty. Jayfrancis D. Bago, Municipal Mayor of Opol, for their continued support, guidance, and commitment to the cooperative sector. Their leadership and encouragement continue to inspire cooperative stakeholders in advancing inclusive and sustainable development in our community.',
+
+        // Authentic Local Caption (Cebuano / Bisaya & Community Dispatch)
+        localCaption: {
+            headline: 'MCDC Monthly Meeting & Oath-Taking Ceremony sa Munisipyo sa Opol',
+            body: 'The Municipal Cooperative Development Council (MCDC) successfully conducted its monthly meeting and Oath-Taking Ceremony on September 17, 2026.\n\nThe activity brought together the members of the MCDC to strengthen coordination, discuss important cooperative development matters, and reaffirm their commitment to supporting and promoting the growth of cooperatives in the Municipality of Opol.\n\nWe extend our sincere gratitude to Hon. Rhally Mae D. Piit, SB Member, Chairman on Livelihood and Cooperative and Hon. Atty. Jayfrancis D. Bago, Municipal Mayor of Opol, for his continued support, guidance, and commitment to the cooperative sector. Your leadership and encouragement continue to inspire our cooperative stakeholders in advancing inclusive and sustainable development in our community.\n\nCongratulations to all the newly inducted and reaffirmed members of the MCDC! May we continue to work together in the spirit of cooperation, unity, and service. 💙❤️',
+            quote: 'May we continue to work together in the spirit of cooperation, unity, and service. 💙❤️',
+        },
+
+        highlights: [
+            'Conducted the MCDC Monthly Meeting and official Oath-Taking Ceremony on September 17, 2026',
+            'Administered with the presence and steadfast support of Municipal Mayor Hon. Atty. Jayfrancis D. Bago',
+            'Co-presided by SB Member Hon. Rhally Mae D. Piit, Chairman on Livelihood and Cooperative',
+            'Strengthened inter-cooperative coordination and mapped out plans for upcoming Cooperative Month 2026',
+            'Inducted and reaffirmed council members committed to transparent governance and inclusive development',
+        ],
+
+        stats: [
+            { label: 'Ceremony Date', value: 'Sept 17, 2026' },
+            { label: 'Presiding Mayor', value: 'Atty. Jayfrancis Bago' },
+            { label: 'SB Committee Chair', value: 'Hon. Rhally Mae Piit' },
+            { label: 'Official Gallery', value: '5 Documented' },
+        ],
+
+        coverImage: oath1,
+        gallery: [
+            {
+                src: oath1,
+                title: 'Solemn Oath of Office Administration',
+                caption: 'Newly inducted and reaffirmed MCDC officers taking their solemn oath of office before Municipal Mayor Hon. Atty. Jayfrancis D. Bago.',
+            },
+            {
+                src: oath2,
+                title: 'Council Deliberations & Leadership Address',
+                caption: 'Hon. Rhally Mae D. Piit, SB Chairman on Livelihood and Cooperative, and Mayor Jayfrancis D. Bago steering strategic cooperative development matters.',
+            },
+            {
+                src: oath3,
+                title: 'Municipal Cooperative Development Council Assembly',
+                caption: 'MCDC members in official council attire reaffirming unity and coordination during the session.',
+            },
+            {
+                src: oath4,
+                title: 'Pledge of Cooperative Service & Integrity',
+                caption: 'Council members reading the oath of office in unison, committing to transparent governance and sustainable livelihood.',
+            },
+            {
+                src: oath5,
+                title: 'Strategic Planning for Cooperative Month 2026',
+                caption: 'The full MCDC body reviewing cooperative activities and municipal initiatives for the upcoming Cooperative Month.',
+            },
+        ],
+    },
     {
         id: 'civic-parade',
         slug: 'civic-parade',
@@ -243,8 +321,8 @@ export const ACHIEVEMENTS_DATA = [
 ];
 
 export const ACHIEVEMENTS_METRICS = {
-    totalMilestones: 4,
-    totalPhotos: 21,
+    totalMilestones: 5,
+    totalPhotos: 26,
     barangaysCovered: 14,
     cooperativesEngaged: '15+ Partners',
     complianceRating: '100% Tracked',
