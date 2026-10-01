@@ -59,6 +59,10 @@
     "file": "assets/ProtectNature_Logo_Dark-CaV-Lu4A.png",
     "src": "resources/Images/5 pilars/ProtectNature_Logo_Dark.png"
   },
+  "resources/Images/A happier Forward Footer/Opol_Branding_Logo.png": {
+    "file": "assets/Opol_Branding_Logo-DikDwrd5.png",
+    "src": "resources/Images/A happier Forward Footer/Opol_Branding_Logo.png"
+  },
   "resources/Images/Civic Parade/e.jpg": {
     "file": "assets/e-Q0w6s2fV.jpg",
     "src": "resources/Images/Civic Parade/e.jpg"
@@ -256,17 +260,17 @@
     "src": "resources/Images/sketch/balay.jpg"
   },
   "resources/css/app.css": {
-    "file": "assets/app-DBzrBv3y.css",
+    "file": "assets/app-ChrwfBEF.css",
     "src": "resources/css/app.css",
     "isEntry": true
   },
   "resources/js/app.jsx": {
-    "file": "assets/app-BRNbiw6Z.js",
+    "file": "assets/app-BJD-3wgG.js",
     "name": "app",
     "src": "resources/js/app.jsx",
     "isEntry": true,
     "css": [
-      "assets/app-DBzrBv3y.css"
+      "assets/app-ChrwfBEF.css"
     ],
     "assets": [
       "assets/Vox-CpwE0YD8.jpg",
@@ -306,6 +310,7 @@
       "assets/ProtectNature_Logo_Dark-CaV-Lu4A.png",
       "assets/ProtectNature_Emblem-DP4UgalF.png",
       "assets/balay-BbXnFj-o.jpg",
+      "assets/Opol_Branding_Logo-DikDwrd5.png",
       "assets/e-Q0w6s2fV.jpg",
       "assets/q-Dazshv_I.jpg",
       "assets/r-BhHCCEf6.jpg",

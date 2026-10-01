@@ -1,11 +1,24 @@
 import { MapPinIcon, PhoneIcon, EnvelopeIcon, ClockIcon, ArrowUpIcon } from '@heroicons/react/24/outline';
 import mcdoLogo from '../../../Images/mcdologs.jpg';
+import opolFooterBg from '../../../Images/A happier Forward Footer/Opol_Branding_Logo.png';
 import { PUBLIC_NAV_LINKS } from './navConfig';
 
 export default function PublicFooter() {
     return (
-        <footer className="relative mt-auto border-t-2 border-blue-600 bg-white dark:bg-slate-900">
-            <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12 pt-14 pb-8">
+        <footer className="relative mt-auto border-t-2 border-blue-600 bg-white dark:bg-slate-900 overflow-hidden">
+            {/* Background Branding Image */}
+            <div 
+                className="absolute inset-0 pointer-events-none select-none overflow-hidden flex items-center justify-center"
+                aria-hidden="true"
+            >
+                <img
+                    src={opolFooterBg}
+                    alt="Opol - A Happier Way Forward"
+                    className="w-auto max-h-[90%] max-w-[92%] sm:max-w-[80%] lg:max-w-[65%] object-contain opacity-25 dark:opacity-20 transition-opacity duration-300 filter contrast-105"
+                />
+            </div>
+
+            <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-8 lg:px-12 pt-14 pb-8">
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-slate-200 dark:border-slate-800">
                     <div>
                         <div className="flex items-center gap-3 mb-5">
