@@ -59,6 +59,24 @@ const TIMELINE_HIGHLIGHTS = [
         accent: 'blue',
         badgeColor: 'bg-blue-100 text-blue-800 dark:bg-blue-950/70 dark:text-blue-300 border-blue-200 dark:border-blue-800',
     },
+    {
+        id: 'opening-salvo',
+        date: 'October 4, 2026',
+        title: 'Opening Salvo • Cooperative Month 2026',
+        venue: 'Provincial Capitol Grounds',
+        category: 'Civic & Community Solidarity',
+        accent: 'blue',
+        badgeColor: 'bg-blue-100 text-blue-800 dark:bg-blue-950/70 dark:text-blue-300 border-blue-200 dark:border-blue-800',
+    },
+    {
+        id: 'mandatory-training-occ',
+        date: 'October 8–9, 2026',
+        title: '2-Day Mandatory Training for Cooperatives',
+        venue: 'Opol Community College',
+        category: 'Formation & Training',
+        accent: 'indigo',
+        badgeColor: 'bg-indigo-100 text-indigo-800 dark:bg-indigo-950/70 dark:text-indigo-300 border-indigo-200 dark:border-indigo-800',
+    },
 ];
 
 export default function Achievements() {
@@ -95,7 +113,7 @@ export default function Achievements() {
                             </span>
                         </div>
 
-                        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-7 gap-4">
                             {TIMELINE_HIGHLIGHTS.map((item, idx) => (
                                 <a
                                     key={idx}
