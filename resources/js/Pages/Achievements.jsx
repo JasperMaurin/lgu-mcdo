@@ -77,6 +77,15 @@ const TIMELINE_HIGHLIGHTS = [
         accent: 'indigo',
         badgeColor: 'bg-indigo-100 text-indigo-800 dark:bg-indigo-950/70 dark:text-indigo-300 border-indigo-200 dark:border-indigo-800',
     },
+    {
+        id: 'mangrove-planting',
+        date: 'October 17, 2026',
+        title: 'Mangrove Planting Activity',
+        venue: 'Coastal Wetlands, Opol',
+        category: 'Environmental Stewardship',
+        accent: 'emerald',
+        badgeColor: 'bg-emerald-100 text-emerald-800 dark:bg-emerald-950/70 dark:text-emerald-300 border-emerald-200 dark:border-emerald-800',
+    },
 ];
 
 export default function Achievements() {
@@ -113,7 +122,7 @@ export default function Achievements() {
                             </span>
                         </div>
 
-                        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-7 gap-4">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-8 gap-4">
                             {TIMELINE_HIGHLIGHTS.map((item, idx) => (
                                 <a
                                     key={idx}

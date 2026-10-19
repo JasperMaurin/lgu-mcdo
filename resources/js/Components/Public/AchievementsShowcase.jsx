@@ -34,7 +34,7 @@ export default function AchievementsShowcase({
     const reducedMotion = useReducedMotion();
     const [selectedCategory, setSelectedCategory] = useState(initialCategory);
     const [activeTabLanguage, setActiveTabLanguage] = useState('executive'); // 'executive' | 'local'
-    const [activeAchievementId, setActiveAchievementId] = useState('mandatory-training-occ');
+    const [activeAchievementId, setActiveAchievementId] = useState('mangrove-planting');
 
     // Lightbox modal state
     const [lightboxOpen, setLightboxOpen] = useState(false);

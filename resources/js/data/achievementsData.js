@@ -1,3 +1,17 @@
+// Mangrove Planting Photos (October 17, 2026)
+import mangrove1 from '../../Images/Mangrove Planting/1.png';
+import mangrove2 from '../../Images/Mangrove Planting/2.png';
+import mangrove3 from '../../Images/Mangrove Planting/3.png';
+import mangrove4 from '../../Images/Mangrove Planting/4.png';
+import mangrove5 from '../../Images/Mangrove Planting/5.png';
+import mangrove6 from '../../Images/Mangrove Planting/6.png';
+import mangrove7 from '../../Images/Mangrove Planting/7.png';
+import mangrove8 from '../../Images/Mangrove Planting/8.png';
+import mangrove9 from '../../Images/Mangrove Planting/9.png';
+import mangrove10 from '../../Images/Mangrove Planting/10.png';
+import mangrove11 from '../../Images/Mangrove Planting/11.png';
+import mangrove12 from '../../Images/Mangrove Planting/12.png';
+
 // OCC Mandatory Training Photos
 import occ1 from '../../Images/Occ Seminar/1.png';
 import occ2 from '../../Images/Occ Seminar/2.png';
@@ -70,6 +84,56 @@ export const ACHIEVEMENTS_CATEGORIES = [
 ];
 
 export const ACHIEVEMENTS_DATA = [
+    {
+        id: 'mangrove-planting',
+        slug: 'mangrove-planting',
+        title: 'Mangrove Planting Activity',
+        tagline: 'Panaghiusa sa kooperatiba, kalikupan ug komunidad alang sa mas lunhaw nga kaugmaon. 💚🌏',
+        category: 'Environmental Stewardship & Coastal Protection',
+        categoryKey: 'environment',
+        badge: 'Environmental Milestone',
+        accent: 'emerald',
+        accentColor: 'text-emerald-600 dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-950/60 border-emerald-200 dark:border-emerald-900',
+        date: 'October 17, 2026',
+        periodLabel: 'Cooperative Month 2026',
+        venue: 'Coastal Wetland & Mangrove Sanctuary, Opol, Misamis Oriental',
+        leadAgency: 'MCDO Opol - Opol Employees MPC - Partner Cooperatives & Civic Volunteers',
+        featured: true,
+        executiveSummary: 'In celebration of Cooperative Month 2026, the Municipal Cooperative Development Office (MCDO), together with local cooperatives including the Opol Employees Multi-Purpose Cooperative and dedicated community volunteers, successfully conducted the Mangrove Planting Activity on October 17, 2026. This environmental initiative is dedicated to coastal protection, marine biodiversity preservation, and advancing a greener, sustainable future for Opol.',
+        localCaption: {
+            headline: 'Mangrove Planting Activity | October 17, 2026',
+            body: 'Malampusong gihimo ang Mangrove Planting Activity isip kabahin sa pagsaulog sa Cooperative Month 2026, alang sa pagpanalipod sa kinaiyahan ug pagpalambo sa mas lunhaw nga kaugmaon. 💚🌏\n\nPanaghiusa sa kooperatiba, kalikupan ug komunidad!',
+            quote: 'Panaghiusa sa kooperatiba, kalikupan ug komunidad! 💚🌏',
+        },
+        highlights: [
+            'Conducted on October 17, 2026 as a major environmental milestone celebrating Cooperative Month 2026',
+            'Mobilized cooperative leaders, LGU employees, women associations, and civic volunteers in coastal rehabilitation',
+            'Directly embodies the 7th Principle of Cooperativism: Concern for Community and environmental protection',
+            'Carefully staked and planted healthy mangrove propagules to bolster coastal sea walls and marine sanctuaries',
+            'Reinforced solidarity between the cooperative sector, local governance, and ecological stewardship',
+        ],
+        stats: [
+            { label: 'Activity Date', value: 'Oct 17, 2026' },
+            { label: 'Primary Focus', value: 'Coastal Ecology' },
+            { label: 'Celebration', value: 'Co-op Month 2026' },
+            { label: 'Documented Photos', value: '12 Official' },
+        ],
+        coverImage: mangrove1,
+        gallery: [
+            { src: mangrove1, title: 'United Cooperative Assembly for Mangrove Planting', caption: 'Cooperative officers, LGU staff, and community partners gather with the Cooperative Month 2026 banner before planting.' },
+            { src: mangrove2, title: 'Women Champions & Cooperative Advocates', caption: 'Empowered women leaders and cooperative members assembled in the coastal mangrove sanctuary.' },
+            { src: mangrove3, title: 'Hands-On Mangrove Propagule Planting', caption: 'A dedicated participant carefully securing a young mangrove sapling with supporting bamboo stakes.' },
+            { src: mangrove4, title: 'Collective Soil Preparation & Sapling Setting', caption: 'Volunteers and cooperative champions working together across the coastal wetland terrain.' },
+            { src: mangrove5, title: 'Securing Mangrove Staking & Rootbeds', caption: 'Cooperative leaders carefully tying and staking mangrove propagules to withstand tidal surges.' },
+            { src: mangrove6, title: 'Pre-Planting Briefing & Technical Orientation', caption: 'Participants receiving instructions on proper spacing, planting depth, and mangrove survival techniques.' },
+            { src: mangrove7, title: 'Distributing Mangrove Seedlings', caption: 'Volunteers receiving bundles of mangrove propagules ready for planting in designated coastal zones.' },
+            { src: mangrove8, title: 'Careful Planting and Alignment', caption: 'Volunteers digging and anchoring seedlings into the nutrient-rich coastal soil.' },
+            { src: mangrove9, title: 'Navigating the Coastal Wetland Nursery', caption: 'Advocates traversing the shoreline mangrove forest to plant new propagules in open canopy gaps.' },
+            { src: mangrove10, title: 'Opol Employees MPC Solidarity Delegation', caption: 'Opol Employees Multi-Purpose Cooperative and women leaders proudly carrying the Cooperative Month banner.' },
+            { src: mangrove11, title: 'Community Leaders & Cooperative Champions', caption: 'Delegation commemorating unity, volunteerism, and environmental stewardship.' },
+            { src: mangrove12, title: 'Planting Propagules Amidst Coastal Grasslands', caption: 'Two participants collaborating to plant and tag a mangrove seedling in the coastal wetlands.' },
+        ],
+    },
     {
         id: 'mandatory-training-occ',
         slug: 'mandatory-training-occ',
@@ -384,8 +448,8 @@ export const ACHIEVEMENTS_DATA = [
 ];
 
 export const ACHIEVEMENTS_METRICS = {
-    totalMilestones: 7,
-    totalPhotos: 49,
+    totalMilestones: 8,
+    totalPhotos: 61,
     barangaysCovered: 14,
     cooperativesEngaged: '15+ Partners',
     complianceRating: '100% Tracked',
